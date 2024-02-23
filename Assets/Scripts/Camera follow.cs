@@ -11,6 +11,9 @@ public class Camerafollow : MonoBehaviour
     [SerializeField] float minYClamp;
     [SerializeField] float maxYClamp;
 
+    [SerializeField] float smoothTime = 0.2f;
+
+    private Vector3 velocity = Vector3.zero;
 
     void FixedUpdate()
     {
@@ -19,7 +22,7 @@ public class Camerafollow : MonoBehaviour
         cameraPos.x = Mathf.Clamp(_target.transform.position.x, minXClamp, maxXClamp);
         cameraPos.y = Mathf.Clamp(_target.transform.position.y, minYClamp, maxYClamp);
 
-        transform.position = cameraPos;
+        transform.position = Vector3.SmoothDamp(transform.position, cameraPos, ref velocity, smoothTime);
     }
 
     // Start is called before the first frame update
