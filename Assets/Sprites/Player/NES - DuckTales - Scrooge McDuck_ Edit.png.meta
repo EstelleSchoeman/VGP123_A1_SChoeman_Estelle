@@ -1,0 +1,1613 @@
+fileFormatVersion: 2
+guid: 95ef227e4f82def4fac5d17569734fea
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BounceAttach_Left1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 310
+        width: 24
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3fe996c53aa1a644a573dcce9b09253
+      internalID: -412467204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BounceAttach_Left2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 310
+        width: 24
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530250bcc9801c847898e0a826c91086
+      internalID: 2070287892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_42
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 310
+        width: 24
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0eff77c1a3f5044daf1bbce8ab32053
+      internalID: 267347907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_43
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 310
+        width: 24
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0022f70b9f1726b4b9ce6a82bc2a4941
+      internalID: 923901293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_45
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 310
+        width: 24
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57703421a155c7049903e57b48ab2282
+      internalID: -725455238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_47
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 310
+        width: 24
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a26d1c12c60c34cac57bf4cebe7cc9
+      internalID: 1239998190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_48
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 310
+        width: 24
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623d5eefd3faad140b09316b0e213f60
+      internalID: 288282811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_49
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 310
+        width: 24
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b34a719893f49499fb54516081a122
+      internalID: -1787997054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_51
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 310
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683b7addcfb34504e9516557270b8efd
+      internalID: 1838655094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Climb1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 264
+        width: 16
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92eaef94c407c1243adeb47927cae484
+      internalID: -305198436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Climb2
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 261
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2cd4e9e5feb639418f0c206cd7b46e6
+      internalID: -378169685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_76
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 264
+        width: 16
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eedacddeb1b90224faca67138ea5c732
+      internalID: -1864760794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_77
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 261
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601bb823c5ced214a874f7a11dbfd1a3
+      internalID: 546340145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Putt_Left1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 261
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72ac5b0f2e50f94fa09e3c151406061
+      internalID: 1257029128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Putt_Left2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 261
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60567c62569cb29439b18fe9f20cb207
+      internalID: 699713315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_80
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 261
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1323ec2b000eb449c4b0617d939ea3
+      internalID: -1115366104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_81
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 261
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b30ed3abd5fd14faeadd5697730364
+      internalID: -888654483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Putt_Left3
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 261
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52623918db874294ba9a83306ba49c6d
+      internalID: -1379068691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Putt_Left4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 261
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25b1068168d80c4b9578a292bf3c6e4
+      internalID: -701647874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_84
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 261
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50a9b28bdf349c4b94ed2b7a9646960
+      internalID: -1833430198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_85
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 261
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ceb1f3d84a3de418335ef55bdac025
+      internalID: 1515186124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_102
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 219
+        width: 7
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3a958fff2b7f14dafd2995689d11ea
+      internalID: -1345079583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_103
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 211
+        width: 18
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb70e056f2ab914b827ea2b170eb3dc
+      internalID: -424626250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_104
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 211
+        width: 18
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a1715d0ca4ef945972900054d39166
+      internalID: 1777008489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_105
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 211
+        width: 18
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af52f628162309849bae9bd560e33bc4
+      internalID: 733471024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_106
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 219
+        width: 7
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed720d52fd573a419b6c01995f68fbb
+      internalID: -237746247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_107
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 211
+        width: 18
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efee292fd4ef21469f8d919b62673e5
+      internalID: 841490671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_108
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 211
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7591e8c3eb1dd384298e286ca3171940
+      internalID: -887098915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_109
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 211
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d58a859028d30408a89d9d734c2c9d
+      internalID: -975176155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_110
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 211
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead43ea2603465444a4af6a7939c0179
+      internalID: -1967623523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_111
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 211
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39499e05629468647aa7c6caa6ea3f4a
+      internalID: 712388120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_112
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 211
+        width: 20
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a25567c79dd4c4d9d3a4b434a9e5e7
+      internalID: -1827988242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_143
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 163
+        width: 23
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70a015ef4f6b9047b97e565fe52241e
+      internalID: -395865735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_144
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 163
+        width: 25
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1f3b54a4154a243ba8c3fe2cf8fab9
+      internalID: -1667536024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_145
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 163
+        width: 25
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf06d546feb3da4b9e3969308193204
+      internalID: 1234284089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_146
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 163
+        width: 24
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac0d0530f72d2b43ab5f3cba55f95c4
+      internalID: 1544367060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_147
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 163
+        width: 24
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080265db45f0bc840b39b9b8dd6d44ad
+      internalID: 856702777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_148
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 163
+        width: 27
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96639686d336cff488167eaaee4cc410
+      internalID: -1261419858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_149
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 163
+        width: 31
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a883394a7bb664c878bbe5565e3730
+      internalID: 1144407941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_150
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 163
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0948d02101c67664fb742e49585151ed
+      internalID: 1928429046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_180
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 123
+        width: 24
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d2127eb2878474c9f4903fcdb714bc
+      internalID: 1314689871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_181
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 123
+        width: 24
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2022df2ffdb7ab4fa8ee1a1d3a5eb7f
+      internalID: -1971099558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_left
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 357
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c08f23afde9fb441a91623b62b85bca
+      internalID: 1183335745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Right
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 358
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e55364c6edd5d3409ce674cf17aebbc
+      internalID: 1969458259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_left
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 358
+        width: 23
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2170bcd4e74155043acd33f23cf0cf6e
+      internalID: 1728970222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_left2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 358
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2838b6ce3f8e246b4193c1008cf954
+      internalID: -490312550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_left1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 358
+        width: 23
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e84eaad8e99dd84f94cb05b4b235eda
+      internalID: -820312747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_5
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 358
+        width: 23
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2340def0775093b44ad6ab7ef5879f64
+      internalID: 1396989190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_6
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 358
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a6c6731f52ac64da625cfca0d4cdcc
+      internalID: -1358104111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_7
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 358
+        width: 23
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76aa2c227fc631748b67cb9fd938b5d3
+      internalID: 1996013705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Left
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 360
+        width: 24
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ecd587cc6bc4c43af0fd530f821aa7
+      internalID: 638860992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_9
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 360
+        width: 24
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6048acb417d376d478830492ae2ed85b
+      internalID: 1331836750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_10
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 354
+        width: 24
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949a479166dcfb345884dcf5134745bd
+      internalID: -1276257093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_11
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 354
+        width: 24
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76ccfdb11310da4eb1b3a1239ed680e
+      internalID: -565491806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_207
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 39
+        width: 6
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b70679434e8200489825e7ee7e317be
+      internalID: 2118824772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Scrooge McDuck_ Edit_0
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 310
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44808d2ab312eea45adf4edb09b11ec6
+      internalID: -53395611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BounceAttach_Left1: -412467204
+      BounceAttach_Left2: 2070287892
+      Climb1: -305198436
+      Climb2: -378169685
+      Idle_Right: 1969458259
+      Idle_left: 1460551639
+      Jump_Left: 638860992
+      NES - DuckTales - Scrooge McDuck_ Edit_0: -53395611
+      NES - DuckTales - Scrooge McDuck_ Edit_10: -1276257093
+      NES - DuckTales - Scrooge McDuck_ Edit_100: 1098061404
+      NES - DuckTales - Scrooge McDuck_ Edit_101: 55775314
+      NES - DuckTales - Scrooge McDuck_ Edit_102: -1345079583
+      NES - DuckTales - Scrooge McDuck_ Edit_103: -424626250
+      NES - DuckTales - Scrooge McDuck_ Edit_104: 1777008489
+      NES - DuckTales - Scrooge McDuck_ Edit_105: 733471024
+      NES - DuckTales - Scrooge McDuck_ Edit_106: -237746247
+      NES - DuckTales - Scrooge McDuck_ Edit_107: 841490671
+      NES - DuckTales - Scrooge McDuck_ Edit_108: -887098915
+      NES - DuckTales - Scrooge McDuck_ Edit_109: -975176155
+      NES - DuckTales - Scrooge McDuck_ Edit_11: -565491806
+      NES - DuckTales - Scrooge McDuck_ Edit_110: -1967623523
+      NES - DuckTales - Scrooge McDuck_ Edit_111: 712388120
+      NES - DuckTales - Scrooge McDuck_ Edit_112: -1827988242
+      NES - DuckTales - Scrooge McDuck_ Edit_113: 1559567030
+      NES - DuckTales - Scrooge McDuck_ Edit_114: -1398618058
+      NES - DuckTales - Scrooge McDuck_ Edit_115: -835656795
+      NES - DuckTales - Scrooge McDuck_ Edit_116: 1975844960
+      NES - DuckTales - Scrooge McDuck_ Edit_117: 77869296
+      NES - DuckTales - Scrooge McDuck_ Edit_118: -1581631703
+      NES - DuckTales - Scrooge McDuck_ Edit_119: -735388979
+      NES - DuckTales - Scrooge McDuck_ Edit_12: -1094001265
+      NES - DuckTales - Scrooge McDuck_ Edit_120: 1685939095
+      NES - DuckTales - Scrooge McDuck_ Edit_121: 34646283
+      NES - DuckTales - Scrooge McDuck_ Edit_122: -1920508871
+      NES - DuckTales - Scrooge McDuck_ Edit_123: -324847970
+      NES - DuckTales - Scrooge McDuck_ Edit_124: -699346136
+      NES - DuckTales - Scrooge McDuck_ Edit_125: 1352333114
+      NES - DuckTales - Scrooge McDuck_ Edit_126: 2055675988
+      NES - DuckTales - Scrooge McDuck_ Edit_127: 400147838
+      NES - DuckTales - Scrooge McDuck_ Edit_128: 913430660
+      NES - DuckTales - Scrooge McDuck_ Edit_129: -1975361079
+      NES - DuckTales - Scrooge McDuck_ Edit_13: 2098570470
+      NES - DuckTales - Scrooge McDuck_ Edit_130: -766207830
+      NES - DuckTales - Scrooge McDuck_ Edit_131: -1699757844
+      NES - DuckTales - Scrooge McDuck_ Edit_132: 178095425
+      NES - DuckTales - Scrooge McDuck_ Edit_133: 1793201901
+      NES - DuckTales - Scrooge McDuck_ Edit_134: 203198978
+      NES - DuckTales - Scrooge McDuck_ Edit_135: -1459949134
+      NES - DuckTales - Scrooge McDuck_ Edit_136: -54182879
+      NES - DuckTales - Scrooge McDuck_ Edit_137: -1512840596
+      NES - DuckTales - Scrooge McDuck_ Edit_138: 332611063
+      NES - DuckTales - Scrooge McDuck_ Edit_139: -1015799494
+      NES - DuckTales - Scrooge McDuck_ Edit_14: -1408594477
+      NES - DuckTales - Scrooge McDuck_ Edit_140: 580114707
+      NES - DuckTales - Scrooge McDuck_ Edit_141: -1702619488
+      NES - DuckTales - Scrooge McDuck_ Edit_142: 860120970
+      NES - DuckTales - Scrooge McDuck_ Edit_143: -395865735
+      NES - DuckTales - Scrooge McDuck_ Edit_144: -1667536024
+      NES - DuckTales - Scrooge McDuck_ Edit_145: 1234284089
+      NES - DuckTales - Scrooge McDuck_ Edit_146: 1544367060
+      NES - DuckTales - Scrooge McDuck_ Edit_147: 856702777
+      NES - DuckTales - Scrooge McDuck_ Edit_148: -1261419858
+      NES - DuckTales - Scrooge McDuck_ Edit_149: 1144407941
+      NES - DuckTales - Scrooge McDuck_ Edit_15: 1632584568
+      NES - DuckTales - Scrooge McDuck_ Edit_150: 1928429046
+      NES - DuckTales - Scrooge McDuck_ Edit_151: -867440159
+      NES - DuckTales - Scrooge McDuck_ Edit_152: 403303282
+      NES - DuckTales - Scrooge McDuck_ Edit_153: -2000465294
+      NES - DuckTales - Scrooge McDuck_ Edit_154: 2043801811
+      NES - DuckTales - Scrooge McDuck_ Edit_155: -1769734756
+      NES - DuckTales - Scrooge McDuck_ Edit_156: 117080600
+      NES - DuckTales - Scrooge McDuck_ Edit_157: 1133187967
+      NES - DuckTales - Scrooge McDuck_ Edit_158: 1332581389
+      NES - DuckTales - Scrooge McDuck_ Edit_159: 691817014
+      NES - DuckTales - Scrooge McDuck_ Edit_16: -354398125
+      NES - DuckTales - Scrooge McDuck_ Edit_160: 1251586484
+      NES - DuckTales - Scrooge McDuck_ Edit_161: -1797724948
+      NES - DuckTales - Scrooge McDuck_ Edit_162: 761103399
+      NES - DuckTales - Scrooge McDuck_ Edit_163: -1055859635
+      NES - DuckTales - Scrooge McDuck_ Edit_164: -1921073476
+      NES - DuckTales - Scrooge McDuck_ Edit_165: -414442317
+      NES - DuckTales - Scrooge McDuck_ Edit_166: 1415514505
+      NES - DuckTales - Scrooge McDuck_ Edit_167: 1317213029
+      NES - DuckTales - Scrooge McDuck_ Edit_168: -1404605013
+      NES - DuckTales - Scrooge McDuck_ Edit_169: 543741544
+      NES - DuckTales - Scrooge McDuck_ Edit_17: 1126458999
+      NES - DuckTales - Scrooge McDuck_ Edit_170: 1781889565
+      NES - DuckTales - Scrooge McDuck_ Edit_171: -450808842
+      NES - DuckTales - Scrooge McDuck_ Edit_172: -79859854
+      NES - DuckTales - Scrooge McDuck_ Edit_173: -651643630
+      NES - DuckTales - Scrooge McDuck_ Edit_174: 183358099
+      NES - DuckTales - Scrooge McDuck_ Edit_175: -27362759
+      NES - DuckTales - Scrooge McDuck_ Edit_176: -738872755
+      NES - DuckTales - Scrooge McDuck_ Edit_177: 1118357127
+      NES - DuckTales - Scrooge McDuck_ Edit_178: -1060484334
+      NES - DuckTales - Scrooge McDuck_ Edit_179: 1473891380
+      NES - DuckTales - Scrooge McDuck_ Edit_18: -60797395
+      NES - DuckTales - Scrooge McDuck_ Edit_180: 1314689871
+      NES - DuckTales - Scrooge McDuck_ Edit_181: -1971099558
+      NES - DuckTales - Scrooge McDuck_ Edit_182: 437033574
+      NES - DuckTales - Scrooge McDuck_ Edit_183: 641401373
+      NES - DuckTales - Scrooge McDuck_ Edit_184: 1498428925
+      NES - DuckTales - Scrooge McDuck_ Edit_185: -856699435
+      NES - DuckTales - Scrooge McDuck_ Edit_186: -1665009351
+      NES - DuckTales - Scrooge McDuck_ Edit_187: -109048277
+      NES - DuckTales - Scrooge McDuck_ Edit_188: 1095258878
+      NES - DuckTales - Scrooge McDuck_ Edit_189: -1222580675
+      NES - DuckTales - Scrooge McDuck_ Edit_19: 418066273
+      NES - DuckTales - Scrooge McDuck_ Edit_190: 2024011689
+      NES - DuckTales - Scrooge McDuck_ Edit_191: -1223867914
+      NES - DuckTales - Scrooge McDuck_ Edit_192: -1803762774
+      NES - DuckTales - Scrooge McDuck_ Edit_193: -2060236592
+      NES - DuckTales - Scrooge McDuck_ Edit_194: 1575803292
+      NES - DuckTales - Scrooge McDuck_ Edit_195: -2029093156
+      NES - DuckTales - Scrooge McDuck_ Edit_196: -734228212
+      NES - DuckTales - Scrooge McDuck_ Edit_197: -238383471
+      NES - DuckTales - Scrooge McDuck_ Edit_198: 532500683
+      NES - DuckTales - Scrooge McDuck_ Edit_199: 1971901102
+      NES - DuckTales - Scrooge McDuck_ Edit_2: 1746835784
+      NES - DuckTales - Scrooge McDuck_ Edit_20: -1341638313
+      NES - DuckTales - Scrooge McDuck_ Edit_200: 257292540
+      NES - DuckTales - Scrooge McDuck_ Edit_201: -926306129
+      NES - DuckTales - Scrooge McDuck_ Edit_202: -910636970
+      NES - DuckTales - Scrooge McDuck_ Edit_203: 1924458759
+      NES - DuckTales - Scrooge McDuck_ Edit_204: 1578589711
+      NES - DuckTales - Scrooge McDuck_ Edit_205: -739909509
+      NES - DuckTales - Scrooge McDuck_ Edit_206: -1956776713
+      NES - DuckTales - Scrooge McDuck_ Edit_207: 2118824772
+      NES - DuckTales - Scrooge McDuck_ Edit_208: -1949370174
+      NES - DuckTales - Scrooge McDuck_ Edit_209: -1983068902
+      NES - DuckTales - Scrooge McDuck_ Edit_21: -1839759774
+      NES - DuckTales - Scrooge McDuck_ Edit_210: -704375370
+      NES - DuckTales - Scrooge McDuck_ Edit_211: -921192441
+      NES - DuckTales - Scrooge McDuck_ Edit_212: -1228628569
+      NES - DuckTales - Scrooge McDuck_ Edit_213: -1845377396
+      NES - DuckTales - Scrooge McDuck_ Edit_214: -692630120
+      NES - DuckTales - Scrooge McDuck_ Edit_215: -1917334580
+      NES - DuckTales - Scrooge McDuck_ Edit_216: 312951594
+      NES - DuckTales - Scrooge McDuck_ Edit_217: 970103170
+      NES - DuckTales - Scrooge McDuck_ Edit_218: 1340105191
+      NES - DuckTales - Scrooge McDuck_ Edit_219: -1702986544
+      NES - DuckTales - Scrooge McDuck_ Edit_22: -1095342454
+      NES - DuckTales - Scrooge McDuck_ Edit_220: -212237222
+      NES - DuckTales - Scrooge McDuck_ Edit_221: -1147472672
+      NES - DuckTales - Scrooge McDuck_ Edit_222: -1796985263
+      NES - DuckTales - Scrooge McDuck_ Edit_223: -379652652
+      NES - DuckTales - Scrooge McDuck_ Edit_224: 1200953320
+      NES - DuckTales - Scrooge McDuck_ Edit_225: 668163451
+      NES - DuckTales - Scrooge McDuck_ Edit_226: 524713140
+      NES - DuckTales - Scrooge McDuck_ Edit_227: 889007739
+      NES - DuckTales - Scrooge McDuck_ Edit_228: -617161057
+      NES - DuckTales - Scrooge McDuck_ Edit_229: -707114620
+      NES - DuckTales - Scrooge McDuck_ Edit_23: 767812869
+      NES - DuckTales - Scrooge McDuck_ Edit_230: -2085395925
+      NES - DuckTales - Scrooge McDuck_ Edit_231: -1073546116
+      NES - DuckTales - Scrooge McDuck_ Edit_232: 1270463210
+      NES - DuckTales - Scrooge McDuck_ Edit_233: 663232436
+      NES - DuckTales - Scrooge McDuck_ Edit_234: -1379998616
+      NES - DuckTales - Scrooge McDuck_ Edit_235: -920583038
+      NES - DuckTales - Scrooge McDuck_ Edit_236: -914095152
+      NES - DuckTales - Scrooge McDuck_ Edit_237: -99783906
+      NES - DuckTales - Scrooge McDuck_ Edit_238: 444888013
+      NES - DuckTales - Scrooge McDuck_ Edit_239: -1790734832
+      NES - DuckTales - Scrooge McDuck_ Edit_24: 486880842
+      NES - DuckTales - Scrooge McDuck_ Edit_240: 220534276
+      NES - DuckTales - Scrooge McDuck_ Edit_241: -2138848641
+      NES - DuckTales - Scrooge McDuck_ Edit_242: -638549280
+      NES - DuckTales - Scrooge McDuck_ Edit_243: 563424739
+      NES - DuckTales - Scrooge McDuck_ Edit_244: -667626070
+      NES - DuckTales - Scrooge McDuck_ Edit_245: -574439408
+      NES - DuckTales - Scrooge McDuck_ Edit_246: 27461537
+      NES - DuckTales - Scrooge McDuck_ Edit_247: -1033982896
+      NES - DuckTales - Scrooge McDuck_ Edit_248: 1393518320
+      NES - DuckTales - Scrooge McDuck_ Edit_249: -1232429097
+      NES - DuckTales - Scrooge McDuck_ Edit_25: -1272913618
+      NES - DuckTales - Scrooge McDuck_ Edit_250: 1337139494
+      NES - DuckTales - Scrooge McDuck_ Edit_251: 692358606
+      NES - DuckTales - Scrooge McDuck_ Edit_252: 205119263
+      NES - DuckTales - Scrooge McDuck_ Edit_253: 1909047523
+      NES - DuckTales - Scrooge McDuck_ Edit_254: -1208980225
+      NES - DuckTales - Scrooge McDuck_ Edit_255: -460154335
+      NES - DuckTales - Scrooge McDuck_ Edit_256: 49312096
+      NES - DuckTales - Scrooge McDuck_ Edit_257: -1225268940
+      NES - DuckTales - Scrooge McDuck_ Edit_258: -1023288155
+      NES - DuckTales - Scrooge McDuck_ Edit_259: 1067622766
+      NES - DuckTales - Scrooge McDuck_ Edit_26: 976032103
+      NES - DuckTales - Scrooge McDuck_ Edit_260: 715210711
+      NES - DuckTales - Scrooge McDuck_ Edit_261: 1709726266
+      NES - DuckTales - Scrooge McDuck_ Edit_262: 1818538546
+      NES - DuckTales - Scrooge McDuck_ Edit_263: -496303349
+      NES - DuckTales - Scrooge McDuck_ Edit_264: -415810333
+      NES - DuckTales - Scrooge McDuck_ Edit_265: -106143159
+      NES - DuckTales - Scrooge McDuck_ Edit_266: 627772367
+      NES - DuckTales - Scrooge McDuck_ Edit_267: -1936177189
+      NES - DuckTales - Scrooge McDuck_ Edit_268: 138290831
+      NES - DuckTales - Scrooge McDuck_ Edit_269: -1953026283
+      NES - DuckTales - Scrooge McDuck_ Edit_27: -1814859912
+      NES - DuckTales - Scrooge McDuck_ Edit_270: 1719304189
+      NES - DuckTales - Scrooge McDuck_ Edit_271: 558328732
+      NES - DuckTales - Scrooge McDuck_ Edit_272: 527650481
+      NES - DuckTales - Scrooge McDuck_ Edit_273: -881025522
+      NES - DuckTales - Scrooge McDuck_ Edit_274: 1819760137
+      NES - DuckTales - Scrooge McDuck_ Edit_275: 498521051
+      NES - DuckTales - Scrooge McDuck_ Edit_276: -2063346025
+      NES - DuckTales - Scrooge McDuck_ Edit_277: -1761247536
+      NES - DuckTales - Scrooge McDuck_ Edit_278: 1807251332
+      NES - DuckTales - Scrooge McDuck_ Edit_279: -2146015801
+      NES - DuckTales - Scrooge McDuck_ Edit_28: 1505239119
+      NES - DuckTales - Scrooge McDuck_ Edit_280: -1426160646
+      NES - DuckTales - Scrooge McDuck_ Edit_281: -984349723
+      NES - DuckTales - Scrooge McDuck_ Edit_282: 1056963538
+      NES - DuckTales - Scrooge McDuck_ Edit_283: 324581444
+      NES - DuckTales - Scrooge McDuck_ Edit_284: -807976060
+      NES - DuckTales - Scrooge McDuck_ Edit_285: -1750999787
+      NES - DuckTales - Scrooge McDuck_ Edit_286: -1467045741
+      NES - DuckTales - Scrooge McDuck_ Edit_287: 997705402
+      NES - DuckTales - Scrooge McDuck_ Edit_288: 1965299330
+      NES - DuckTales - Scrooge McDuck_ Edit_289: -655533315
+      NES - DuckTales - Scrooge McDuck_ Edit_29: -683554252
+      NES - DuckTales - Scrooge McDuck_ Edit_290: -532533116
+      NES - DuckTales - Scrooge McDuck_ Edit_291: -2046179277
+      NES - DuckTales - Scrooge McDuck_ Edit_292: -1236408134
+      NES - DuckTales - Scrooge McDuck_ Edit_293: -355022412
+      NES - DuckTales - Scrooge McDuck_ Edit_294: -558453717
+      NES - DuckTales - Scrooge McDuck_ Edit_30: 1557958874
+      NES - DuckTales - Scrooge McDuck_ Edit_31: -1333574095
+      NES - DuckTales - Scrooge McDuck_ Edit_32: 1854721451
+      NES - DuckTales - Scrooge McDuck_ Edit_33: -1166641994
+      NES - DuckTales - Scrooge McDuck_ Edit_34: 1510578838
+      NES - DuckTales - Scrooge McDuck_ Edit_35: 1188243499
+      NES - DuckTales - Scrooge McDuck_ Edit_36: -364111756
+      NES - DuckTales - Scrooge McDuck_ Edit_37: -1096191674
+      NES - DuckTales - Scrooge McDuck_ Edit_38: -1359317638
+      NES - DuckTales - Scrooge McDuck_ Edit_39: 1407510395
+      NES - DuckTales - Scrooge McDuck_ Edit_42: 267347907
+      NES - DuckTales - Scrooge McDuck_ Edit_43: 923901293
+      NES - DuckTales - Scrooge McDuck_ Edit_44: 619712103
+      NES - DuckTales - Scrooge McDuck_ Edit_45: -725455238
+      NES - DuckTales - Scrooge McDuck_ Edit_46: 1943757355
+      NES - DuckTales - Scrooge McDuck_ Edit_47: 1239998190
+      NES - DuckTales - Scrooge McDuck_ Edit_48: 288282811
+      NES - DuckTales - Scrooge McDuck_ Edit_49: -1787997054
+      NES - DuckTales - Scrooge McDuck_ Edit_5: 1396989190
+      NES - DuckTales - Scrooge McDuck_ Edit_50: -1585693019
+      NES - DuckTales - Scrooge McDuck_ Edit_51: 1838655094
+      NES - DuckTales - Scrooge McDuck_ Edit_52: 1023813389
+      NES - DuckTales - Scrooge McDuck_ Edit_53: 1879684804
+      NES - DuckTales - Scrooge McDuck_ Edit_54: -1559546960
+      NES - DuckTales - Scrooge McDuck_ Edit_55: -1615373985
+      NES - DuckTales - Scrooge McDuck_ Edit_56: -582589983
+      NES - DuckTales - Scrooge McDuck_ Edit_57: -551231713
+      NES - DuckTales - Scrooge McDuck_ Edit_58: -2085270374
+      NES - DuckTales - Scrooge McDuck_ Edit_59: -1898491320
+      NES - DuckTales - Scrooge McDuck_ Edit_6: -1358104111
+      NES - DuckTales - Scrooge McDuck_ Edit_60: -1945691534
+      NES - DuckTales - Scrooge McDuck_ Edit_61: 1764775222
+      NES - DuckTales - Scrooge McDuck_ Edit_62: 1395927126
+      NES - DuckTales - Scrooge McDuck_ Edit_63: -1604739074
+      NES - DuckTales - Scrooge McDuck_ Edit_64: -1061333646
+      NES - DuckTales - Scrooge McDuck_ Edit_65: 1931846474
+      NES - DuckTales - Scrooge McDuck_ Edit_66: 1362230721
+      NES - DuckTales - Scrooge McDuck_ Edit_67: -1745062695
+      NES - DuckTales - Scrooge McDuck_ Edit_68: -1344712785
+      NES - DuckTales - Scrooge McDuck_ Edit_69: -1650639692
+      NES - DuckTales - Scrooge McDuck_ Edit_7: 1996013705
+      NES - DuckTales - Scrooge McDuck_ Edit_70: -1392470701
+      NES - DuckTales - Scrooge McDuck_ Edit_71: 244296750
+      NES - DuckTales - Scrooge McDuck_ Edit_72: 1658176224
+      NES - DuckTales - Scrooge McDuck_ Edit_73: -1045782120
+      NES - DuckTales - Scrooge McDuck_ Edit_76: -1864760794
+      NES - DuckTales - Scrooge McDuck_ Edit_77: 546340145
+      NES - DuckTales - Scrooge McDuck_ Edit_80: -1115366104
+      NES - DuckTales - Scrooge McDuck_ Edit_81: -888654483
+      NES - DuckTales - Scrooge McDuck_ Edit_84: -1833430198
+      NES - DuckTales - Scrooge McDuck_ Edit_85: 1515186124
+      NES - DuckTales - Scrooge McDuck_ Edit_86: -750924247
+      NES - DuckTales - Scrooge McDuck_ Edit_87: 1008598519
+      NES - DuckTales - Scrooge McDuck_ Edit_88: -1560270976
+      NES - DuckTales - Scrooge McDuck_ Edit_89: -910780982
+      NES - DuckTales - Scrooge McDuck_ Edit_9: 1331836750
+      NES - DuckTales - Scrooge McDuck_ Edit_90: 740241853
+      NES - DuckTales - Scrooge McDuck_ Edit_91: -997708313
+      NES - DuckTales - Scrooge McDuck_ Edit_92: -1241534578
+      NES - DuckTales - Scrooge McDuck_ Edit_93: -529928345
+      NES - DuckTales - Scrooge McDuck_ Edit_94: -198891057
+      NES - DuckTales - Scrooge McDuck_ Edit_95: -729566506
+      NES - DuckTales - Scrooge McDuck_ Edit_96: 567921761
+      NES - DuckTales - Scrooge McDuck_ Edit_97: 1461416381
+      NES - DuckTales - Scrooge McDuck_ Edit_98: -752779582
+      NES - DuckTales - Scrooge McDuck_ Edit_99: 1783971648
+      Putt_Left1: 1257029128
+      Putt_Left2: 699713315
+      Putt_Left3: -1379068691
+      Putt_Left4: -701647874
+      Walk_left: 1728970222
+      Walk_left1: -820312747
+      Walk_left2: -490312550
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
