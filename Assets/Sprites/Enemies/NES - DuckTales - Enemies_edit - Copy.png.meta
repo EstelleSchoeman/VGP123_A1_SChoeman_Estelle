@@ -438,7 +438,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - DuckTales - Enemies_edit_15
+      name: Spider1
       rect:
         serializedVersion: 2
         x: 2
@@ -459,7 +459,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - DuckTales - Enemies_edit_16
+      name: Spider2
       rect:
         serializedVersion: 2
         x: 38
@@ -480,7 +480,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - DuckTales - Enemies_edit_17
+      name: Spider3
       rect:
         serializedVersion: 2
         x: 72
@@ -1973,9 +1973,6 @@ TextureImporter:
       NES - DuckTales - Enemies_edit_12: 2018103710
       NES - DuckTales - Enemies_edit_13: -3548562
       NES - DuckTales - Enemies_edit_14: 1286112747
-      NES - DuckTales - Enemies_edit_15: -350199064
-      NES - DuckTales - Enemies_edit_16: 626853129
-      NES - DuckTales - Enemies_edit_17: 1888434580
       NES - DuckTales - Enemies_edit_18: -847212358
       NES - DuckTales - Enemies_edit_19: 1656263970
       NES - DuckTales - Enemies_edit_2: 806185130
@@ -2047,6 +2044,9 @@ TextureImporter:
       NES - DuckTales - Enemies_edit_85: 1877628354
       NES - DuckTales - Enemies_edit_86: 852388085
       NES - DuckTales - Enemies_edit_9: 1099317386
+      Spider1: -350199064
+      Spider2: 626853129
+      Spider3: 1888434580
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
