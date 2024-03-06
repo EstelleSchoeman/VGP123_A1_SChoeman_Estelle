@@ -73,7 +73,21 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            int buildIndex = (SceneManager.GetActiveScene().name == "Level") ? 0:1;
+            int buildIndex;
+            if (SceneManager.GetActiveScene().name == "Level")
+                buildIndex = 0;
+            // Escape = Game Over scene
+            else if (SceneManager.GetActiveScene().name == "Escape")
+                buildIndex = 0;
+            else
+            {
+                buildIndex = 1;
+                ResetGame();
+            }
+
+
+
+
             SceneManager.LoadScene(buildIndex);
 
             
@@ -107,5 +121,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(2);
 
+    }
+
+    void ResetGame()
+    {
+        _lives = maxLives;
     }
 }
