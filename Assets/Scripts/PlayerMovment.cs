@@ -180,11 +180,6 @@ public class PlayerMovment : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.CompareTag("EnemyProjectile"))
-        {
-            GameManager.Instance.lives--;
-        }
-
         if(col.CompareTag("Vine"))
         { 
          Vine.Add(col.gameObject);

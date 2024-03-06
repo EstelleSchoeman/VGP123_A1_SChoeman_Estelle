@@ -40,5 +40,13 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject, lifeTime);
 
         }
+
+        if (collision.gameObject.tag == "Player")
+        {
+            GameManager.Instance.lives--;
+            Debug.Log("Lives:" + GameManager.Instance.lives);
+
+
+        }
     }
 }

@@ -30,9 +30,9 @@ public class GameManager : MonoBehaviour
             _lives = value;
 
             if (lives > maxLives)
-                lives = maxLives;
+                _lives = maxLives;
 
-            if (lives < 0)
+            if (lives < 1)
                 GameOver();
 
         }
@@ -75,7 +75,8 @@ public class GameManager : MonoBehaviour
         {
             int buildIndex = (SceneManager.GetActiveScene().name == "Level") ? 0:1;
             SceneManager.LoadScene(buildIndex);
-        
+
+            
         }
 
         if(Input.GetKeyDown(KeyCode.Alpha1))
@@ -104,7 +105,7 @@ public class GameManager : MonoBehaviour
 
     void GameOver()
     {
-        Debug.Log("Game Over called");
+        SceneManager.LoadScene(2);
 
     }
 }
