@@ -31,7 +31,7 @@ public class EnemyThrow : Enemy
         AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
 
     
-        Distance = Vector2.Distance(gameObject.transform.position, playerObject.transform.position);
+        Distance = Vector2.Distance(gameObject.transform.position, GameManager.Instance.PlayerInstance.transform.position);
 
         if(Distance >= 10) 
         {
@@ -54,11 +54,11 @@ public class EnemyThrow : Enemy
             }
         }
         
-        if(playerObject.transform.position.x > transform.position.x) 
+        if(GameManager.Instance.PlayerInstance.transform.position.x > transform.position.x) 
         {
             sr.flipX = true;
         }
-        else if(playerObject.transform.position.x < transform.position.x)
+        else if(GameManager.Instance.PlayerInstance.transform.position.x < transform.position.x)
         {
             sr.flipX = false;
         }

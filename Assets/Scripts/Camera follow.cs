@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Camerafollow : MonoBehaviour
 {
-    [SerializeField] Transform _target;
-
+    
     [SerializeField] float minXClamp;
     [SerializeField] float maxXClamp;
     [SerializeField] float minYClamp;
@@ -17,10 +16,14 @@ public class Camerafollow : MonoBehaviour
 
     void FixedUpdate()
     {
-       Vector3 cameraPos = transform.position;
 
-        cameraPos.x = Mathf.Clamp(_target.transform.position.x, minXClamp, maxXClamp);
-        cameraPos.y = Mathf.Clamp(_target.transform.position.y, minYClamp, maxYClamp);
+        if (!GameManager.Instance) return;
+        if (!GameManager.Instance.PlayerInstance) return;
+
+        Vector3 cameraPos = transform.position;
+
+        cameraPos.x = Mathf.Clamp(GameManager.Instance.PlayerInstance.transform.position.x, minXClamp, maxXClamp);
+        cameraPos.y = Mathf.Clamp(GameManager.Instance.PlayerInstance.transform.position.y, minYClamp, maxYClamp);
 
         transform.position = Vector3.SmoothDamp(transform.position, cameraPos, ref velocity, smoothTime);
     }
