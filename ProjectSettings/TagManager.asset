@@ -8,6 +8,7 @@ TagManager:
   - Barrier
   - ThrowingEnemy
   - EnemyProjectile
+  - Test
   layers:
   - Default
   - TransparentFX

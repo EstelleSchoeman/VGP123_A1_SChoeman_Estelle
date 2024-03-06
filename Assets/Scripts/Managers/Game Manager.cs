@@ -77,6 +77,11 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(buildIndex);
         
         }
+
+        if(Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            UpdateCheckPoint(GameObject.FindGameObjectWithTag("Test").transform);
+        }
     }
 
     public void spawnPlayer(Transform spawnLocation)
@@ -87,6 +92,7 @@ public class GameManager : MonoBehaviour
 
     public void UpdateCheckPoint(Transform updatedCheckpoint)
     {
+        Debug.Log("checkpoint update");
         currentCheckpoint = updatedCheckpoint;
     }
 
