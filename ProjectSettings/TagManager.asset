@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Vine
   - Barrier
+  - ThrowingEnemy
+  - EnemyProjectile
   layers:
   - Default
   - TransparentFX
