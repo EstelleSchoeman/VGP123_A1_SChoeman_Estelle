@@ -35,11 +35,11 @@ public class EnemyThrow : Enemy
 
         if(Distance >= 10) 
         {
-            anim.SetBool("Idle", true);
+            //anim.SetBool("Idle", true);
         }
         else if(Distance < 10) 
         {
-            anim.SetBool("Idle", false);
+            //anim.SetBool("Idle", false);
 
             if (curPlayingClips[0].clip.name != "Fire")
             {

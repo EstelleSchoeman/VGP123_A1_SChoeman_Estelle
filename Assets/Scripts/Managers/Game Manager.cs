@@ -125,6 +125,6 @@ public class GameManager : MonoBehaviour
 
     void ResetGame()
     {
-        _lives = maxLives;
+       _lives = maxLives;
     }
 }
