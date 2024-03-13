@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor;
 
 public class NewBehaviourScript : MonoBehaviour
 {
@@ -31,6 +32,9 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (quitButto)
+            quitButto.onClick.AddListener(Quit);
+
         if (playButton)
             playButton.onClick.AddListener(() => GameManager.Instance.ChangeScene(1));
 
@@ -47,10 +51,33 @@ public class NewBehaviourScript : MonoBehaviour
                 volSliderText.text = volSlider.value.ToString();
         }
 
+        if(livesText)
+        {
+            GameManager.Instance.OnLifeValueChanged.AddListener(UpdateLifeText);
+            livesText.text = "Lives:" + GameManager.Instance.lives.ToString();
+        }
+
     }
     void OnSliderValueChanged(float value)
     {
         volSliderText.text = value.ToString();
+    }
+
+    void UpdateLifeText(int value)
+    {
+        livesText.text = "Lives:" + value.ToString();
+        
+    }
+
+
+    private void Quit()
+    {
+    #if UNITY_EDITOR
+            EditorApplication.isPlaying = false;
+    #else
+            Application.Quit();
+    # endif
+
     }
 
     void SetMenus(GameObject menuToActivate, GameObject menuToDeactivate)

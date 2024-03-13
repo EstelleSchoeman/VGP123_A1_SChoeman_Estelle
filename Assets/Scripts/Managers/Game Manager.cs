@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 [DefaultExecutionOrder(-1)]
 public class GameManager : MonoBehaviour
 {
+
+    public UnityEvent<int> OnLifeValueChanged;
 
     public static GameManager Instance => instance;
     static GameManager instance;
@@ -34,6 +37,9 @@ public class GameManager : MonoBehaviour
 
             if (lives < 1)
                 GameOver();
+
+            if(OnLifeValueChanged != null)
+            OnLifeValueChanged.Invoke(_lives);
 
         }
     }
