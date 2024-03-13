@@ -5,12 +5,20 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     SpriteRenderer sr;
+    AudioSource audioSource;
+
     public float lifeTime;
+
     public Vector2 initialVelocity;
+
+    // Audio clips
+    [SerializeField] AudioClip hurtSound;
 
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
         if (lifeTime <= 0)
         {
             lifeTime = 2.0f;
@@ -45,7 +53,7 @@ public class Projectile : MonoBehaviour
         {
             GameManager.Instance.lives--;
             Debug.Log("Lives:" + GameManager.Instance.lives);
-
+            audioSource.PlayOneShot(hurtSound);
 
         }
     }

@@ -184,7 +184,7 @@ MonoBehaviour:
   isGrounded: 0
   isAirborne: 0
   pogoStickSound: {fileID: 8300000, guid: 059bed10276a77843b0a08afe888f8e4, type: 3}
-  hurtSound: {fileID: 0}
+  hurtSound: {fileID: 8300000, guid: d454a76dd508e72499642b97914a2e0e, type: 3}
   climbspeed: 4
 --- !u!95 &4832830532791767670
 Animator:

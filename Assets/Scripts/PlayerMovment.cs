@@ -31,7 +31,7 @@ public class PlayerMovment : MonoBehaviour
 
     // Audio clips
     [SerializeField] AudioClip pogoStickSound;
-    [SerializeField] AudioClip hurtSound;
+    //[SerializeField] AudioClip hurtSound;
 
     private float _verticle;
     public float climbspeed = 4;
