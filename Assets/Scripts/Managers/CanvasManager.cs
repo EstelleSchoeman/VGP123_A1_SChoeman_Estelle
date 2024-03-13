@@ -12,6 +12,7 @@ public class NewBehaviourScript : MonoBehaviour
     public Button quitButto;
     public Button resumebutton;
     public Button returnToMenuButton;
+    public Button backButton;
 
     [Header("Menus")]
     public GameObject mainMenu;
