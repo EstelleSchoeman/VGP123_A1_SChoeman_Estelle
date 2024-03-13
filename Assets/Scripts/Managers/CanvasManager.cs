@@ -13,7 +13,8 @@ public class CanvasManager : MonoBehaviour
     [Header("Button")]
     public Button playButton;
     public Button settingsButton;
-    public Button quitButto;
+    public Button quitButtonPause;
+    public Button quitButtonTitle;
     public Button resumebutton;
     public Button returnToMenuButton;
     public Button backButton;
@@ -43,8 +44,11 @@ public class CanvasManager : MonoBehaviour
         if (returnToMenuButton)
             returnToMenuButton.onClick.AddListener(() => GameManager.Instance.ChangeScene(0));
 
-        if (quitButto)
-            quitButto.onClick.AddListener(Quit);
+        if (quitButtonPause)
+            quitButtonPause.onClick.AddListener(Quit);
+
+        if (quitButtonTitle)
+            quitButtonTitle.onClick.AddListener(Quit);
 
         if (playButton)
             playButton.onClick.AddListener(() => GameManager.Instance.ChangeScene(1));
