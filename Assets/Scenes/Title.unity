@@ -278,9 +278,9 @@ RectTransform:
   - {fileID: 1122153519}
   m_Father: {fileID: 2007434330}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 682.1667, y: -260.50006}
   m_SizeDelta: {x: 150, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &237598416
@@ -624,9 +624,9 @@ RectTransform:
   - {fileID: 1105409688}
   m_Father: {fileID: 2007434330}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 682.1667, y: -203.50002}
   m_SizeDelta: {x: 150, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &877114757
@@ -1279,8 +1279,8 @@ MonoBehaviour:
   m_HandleRect: {fileID: 752375583}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1431,6 +1431,7 @@ GameObject:
   - component: {fileID: 1600817229}
   - component: {fileID: 1600817228}
   - component: {fileID: 1600817227}
+  - component: {fileID: 1600817231}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1522,6 +1523,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1600817231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600817226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e363f8a182cb9409f4ca54b2f70162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playButton: {fileID: 877114757}
+  settingsButton: {fileID: 237598416}
+  quitButto: {fileID: 0}
+  resumebutton: {fileID: 0}
+  returnToMenuButton: {fileID: 0}
+  backButton: {fileID: 178832883}
+  mainMenu: {fileID: 2007434328}
+  settingMenu: {fileID: 1669515890}
+  pauseMenu: {fileID: 0}
+  volSliderText: {fileID: 1588679828}
+  livesText: {fileID: 0}
+  volSlider: {fileID: 1350076721}
 --- !u!1 &1669515890
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,7 +1734,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2007434329
 MonoBehaviour:
   m_ObjectHideFlags: 0
