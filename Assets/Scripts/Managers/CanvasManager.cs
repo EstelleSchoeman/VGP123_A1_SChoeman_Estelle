@@ -32,6 +32,15 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (resumebutton)
+        {
+            resumebutton.onClick.AddListener(() => SetMenus(null, pauseMenu));
+        }
+
+
+        if (returnToMenuButton)
+            returnToMenuButton.onClick.AddListener(() => GameManager.Instance.ChangeScene(0));
+
         if (quitButto)
             quitButto.onClick.AddListener(Quit);
 
@@ -95,6 +104,28 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!pauseMenu) return;
         
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            pauseMenu.SetActive(!pauseMenu.activeSelf);
+            Time.timeScale = 1f;
+
+            if (pauseMenu.activeSelf)
+            {
+                Time.timeScale = 0f;
+            }
+            else
+            {
+                Time.timeScale = 1f;
+            }
+
+
+        }
+        if (!pauseMenu.activeSelf)
+        {
+            Time.timeScale = 1f;
+        }
+
     }
 }
