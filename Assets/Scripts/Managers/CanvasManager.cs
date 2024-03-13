@@ -40,7 +40,6 @@ public class CanvasManager : MonoBehaviour
             resumebutton.onClick.AddListener(() => SetMenus(null, pauseMenu));
         }
 
-
         if (returnToMenuButton)
             returnToMenuButton.onClick.AddListener(() => GameManager.Instance.ChangeScene(0));
 

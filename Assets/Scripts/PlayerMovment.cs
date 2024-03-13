@@ -16,6 +16,7 @@ public class PlayerMovment : MonoBehaviour
     Rigidbody2D rb;
     SpriteRenderer sr;
     Animator anim;
+    AudioSource audioSource;
 
     // *E: Shows under player Movment script
     [SerializeField] float speed = 7.0f;
@@ -27,6 +28,10 @@ public class PlayerMovment : MonoBehaviour
     [SerializeField] float groundCheckRadius = 0.0f;
     [SerializeField] bool isGrounded;
     [SerializeField] bool isAirborne;
+
+    // Audio clips
+    [SerializeField] AudioClip pogoStickSound;
+    [SerializeField] AudioClip hurtSound;
 
     private float _verticle;
     public float climbspeed = 4;
@@ -40,6 +45,7 @@ public class PlayerMovment : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
 
         if (speed <= 0)
         {
@@ -117,6 +123,7 @@ public class PlayerMovment : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             Debug.Log("Is jumping");
             anim.SetBool("IsJumping", true);
+            
         }
 
         if (isGrounded == false && anim.GetBool("IsJumping") == true)
@@ -159,6 +166,7 @@ public class PlayerMovment : MonoBehaviour
             if (Input.GetButtonDown("Fire1"))
             {
                 anim.SetTrigger("JumpAttack");
+                audioSource.PlayOneShot(pogoStickSound);
             }
 
           

@@ -3,6 +3,7 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
     SpriteRenderer sr;
+    AudioSource audioSource;
 
 
     public Vector2 initialVelocity;
@@ -10,10 +11,13 @@ public class Shoot : MonoBehaviour
     public Transform spawnPointRight;
     public Projectile projectilePrefab;
 
+    [SerializeField] AudioClip shootSound;
+
     // Start is called before the first frame update
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void Fire()
@@ -28,6 +32,9 @@ public class Shoot : MonoBehaviour
             Projectile currentProjectile = Instantiate(projectilePrefab, spawnPointLeft.position, spawnPointLeft.rotation);
             currentProjectile.initialVelocity = initialVelocity * -1;
         }
+
+        if(shootSound)
+            audioSource.PlayOneShot(shootSound);
     }
 
 
