@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.XR.WSA;
 
@@ -73,6 +74,10 @@ public class PlayerMovment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (CanvasManager.pausedTime == true)
+            return;
+
         AnimatorClipInfo[] clipInfo = anim.GetCurrentAnimatorClipInfo(0);
 
         //controls the left and right movment 

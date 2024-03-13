@@ -6,8 +6,10 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
 
-public class NewBehaviourScript : MonoBehaviour
+public class CanvasManager : MonoBehaviour
 {
+    public static bool pausedTime = false;
+
     [Header("Button")]
     public Button playButton;
     public Button settingsButton;
@@ -109,15 +111,17 @@ public class NewBehaviourScript : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.P))
         {
             pauseMenu.SetActive(!pauseMenu.activeSelf);
-            Time.timeScale = 1f;
+            
 
             if (pauseMenu.activeSelf)
             {
                 Time.timeScale = 0f;
+                pausedTime = true;
             }
             else
             {
                 Time.timeScale = 1f;
+                pausedTime = false;
             }
 
 
@@ -125,6 +129,7 @@ public class NewBehaviourScript : MonoBehaviour
         if (!pauseMenu.activeSelf)
         {
             Time.timeScale = 1f;
+            pausedTime = false;
         }
 
     }
