@@ -85,18 +85,20 @@ public class GameManager : MonoBehaviour
                 ResetGame();
             }
 
-
-
-
             SceneManager.LoadScene(buildIndex);
-
-            
+                        
         }
+
 
         if(Input.GetKeyDown(KeyCode.Alpha1))
         {
             UpdateCheckPoint(GameObject.FindGameObjectWithTag("Test").transform);
         }
+    }
+
+    public void ChangeScene(int buildIndex)
+    {
+        SceneManager.LoadScene(buildIndex);
     }
 
     public void spawnPlayer(Transform spawnLocation)
