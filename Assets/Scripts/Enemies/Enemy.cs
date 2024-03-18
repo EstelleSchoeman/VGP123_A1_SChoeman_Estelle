@@ -14,8 +14,9 @@ public abstract class Enemy : MonoBehaviour
     // Start is called before the first frame update
     public virtual void Start()
     {
-        anim = GetComponent<Animator>();
+        
         sr = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
 
         if (maxHelath <= 0)
             maxHelath = 10;

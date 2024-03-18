@@ -5,9 +5,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
 
+
 [DefaultExecutionOrder(-1)]
+[RequireComponent(typeof(Animator))]
+
 public class GameManager : MonoBehaviour
 {
+    protected Animator anim;
 
     public UnityEvent<int> OnLifeValueChanged;
 
@@ -21,6 +25,8 @@ public class GameManager : MonoBehaviour
 
 
     [SerializeField] int maxLives = 5;
+   
+
     private int _lives;
     public int lives
     {
@@ -28,7 +34,9 @@ public class GameManager : MonoBehaviour
         set
         {
             if (lives > value)
+            {
                 Respawn();
+            }
 
             _lives = value;
 
@@ -36,7 +44,7 @@ public class GameManager : MonoBehaviour
                 _lives = maxLives;
 
             if (lives < 1)
-                GameOver();
+               GameOver(); 
 
             if(OnLifeValueChanged != null)
             OnLifeValueChanged.Invoke(_lives);
@@ -61,7 +69,10 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    if(instance)
+        anim = GetComponent<Animator>();
+        AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
+
+        if (instance)
         {
             Destroy(gameObject);
             return;
@@ -122,17 +133,31 @@ public class GameManager : MonoBehaviour
     void Respawn()
     {
         Debug.Log("Respawn called");
-        playerInstance.transform.position = currentCheckpoint.position; 
+        playerInstance.transform.position = currentCheckpoint.position;
+        //gotHurt = false;
+        Debug.Log("gotHurt = false;");
+
     }
 
     void GameOver()
     {
-        SceneManager.LoadScene(2);
+       SceneManager.LoadScene(2);
 
     }
 
     void ResetGame()
     {
        _lives = maxLives;
+        
+        
     }
+
+    //public void hurt()
+    //{
+        //anim = GetComponent<Animator>();
+        //AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
+        //curPlayingClips[0].clip.name = "Die";
+        //anim.SetBool("Dead", true); 
+
+   // }
 }

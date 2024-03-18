@@ -204,10 +204,16 @@ public class PlayerMovment : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "ThrowingEnemy")
-        {
+        if (collision.gameObject.tag == "ThrowingEnemy")        {
             collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             GameManager.Instance.lives--;
+
+           // gotHurt = true;
+            anim.SetTrigger("playerHurt");           
+                       
+            //anim = GetComponent<Animator>();
+            //AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
+            //curPlayingClips[0].clip.name = "Hurt";
             Debug.Log("On top!");
         }
     }

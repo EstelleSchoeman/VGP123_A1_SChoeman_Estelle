@@ -39,29 +39,33 @@ public class EnemyThrow : Enemy
     // Update is called once per frame
     void Update()
     {
-        //anim.SetBool("InRange", inRange);
+        anim.SetBool("InRange", inRange);
 
         AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
-
-        if (curPlayingClips[0].clip.name == "Walk")
-            {
-             if (sr.flipX)
-                  rb.velocity = new Vector2(xVelocity, rb.velocity.y);
-             else
-                 rb.velocity = new Vector2(-xVelocity, rb.velocity.y);
-            }
-        
-
         Distance = Vector2.Distance(gameObject.transform.position, GameManager.Instance.PlayerInstance.transform.position);
 
-        if(Distance >= 10) 
+        if (curPlayingClips[0].clip.name == "Walk")
+        {
+            if (sr.flipX)
+                rb.velocity = new Vector2(xVelocity, rb.velocity.y);
+            else
+                rb.velocity = new Vector2(-xVelocity, rb.velocity.y);
+        }
+
+        if (Distance >= 10) 
         {
             curPlayingClips[0].clip.name = "Walk";
             inRange = false;
+            //anim.SetBool("Standing", false);
+            if (xVelocity <= 0)
+                xVelocity = 3;
         }
+
         else if(Distance < 10) 
         {
             inRange = true;
+            anim.SetTrigger("Fire");
+                        
 
             if (curPlayingClips[0].clip.name != "Fire")
             {
@@ -76,6 +80,13 @@ public class EnemyThrow : Enemy
                     
                 }
             }
+
+            if(curPlayingClips[0].clip.name != "Fire" && inRange == true)
+            {
+                curPlayingClips[0].clip.name = "Idel";
+                rb.velocity = Vector2.zero;
+            }
+
         }
         
         if(GameManager.Instance.PlayerInstance.transform.position.x > transform.position.x) 
