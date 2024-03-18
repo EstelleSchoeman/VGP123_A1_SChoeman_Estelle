@@ -39080,6 +39080,7 @@ MonoBehaviour:
   spawnPointLeft: {fileID: 1948445863}
   spawnPointRight: {fileID: 144754632}
   projectilePrefab: {fileID: 2633916763537192604, guid: d046234da082ece4c854c221ca2cdc7e, type: 3}
+  shootSound: {fileID: 0}
 --- !u!50 &412977415
 Rigidbody2D:
   serializedVersion: 4
@@ -39233,6 +39234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32820fa6616f4b4c99ddc3f68a5f294, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xVelocity: 0
   playerObject: {fileID: 1131435341092626964, guid: 0c8b7b91d9207b74ea57b2d144faeb14, type: 3}
   Distance: 0
   projectileFireRate: 3
@@ -60563,7 +60565,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lives: 3'
+  m_text: 'Lives: 5'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

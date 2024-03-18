@@ -9,6 +9,7 @@ TagManager:
   - ThrowingEnemy
   - EnemyProjectile
   - Test
+  - Chest
   layers:
   - Default
   - TransparentFX

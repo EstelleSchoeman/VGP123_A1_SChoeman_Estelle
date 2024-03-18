@@ -189,17 +189,27 @@ public class PlayerMovment : MonoBehaviour
 
 
 
-        //climbing:
+    //climbing:
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.CompareTag("Vine"))
-        { 
-         Vine.Add(col.gameObject);
+        if (col.CompareTag("Vine"))
+        {
+            Vine.Add(col.gameObject);
             Debug.Log("Enter Vine Col");
         }
 
         Debug.Log(col.tag);
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "ThrowingEnemy")
+        {
+            collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            GameManager.Instance.lives--;
+            Debug.Log("On top!");
+        }
     }
 
     private void OnTriggerExit2D(Collider2D col)

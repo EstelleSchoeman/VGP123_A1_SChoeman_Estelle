@@ -3,46 +3,69 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Windows;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class EnemyThrow : Enemy
-
-{   
+{ 
+    Rigidbody2D rb;
+    [SerializeField] float xVelocity;
+  
     public GameObject playerObject;
     public float Distance;
+    private bool inRange = false;
     
 
     [SerializeField] float projectileFireRate;
     float timeSinceLastFire = 0;
+
     // Start is called before the first frame update
     public override void Start()
-    {
-        base.Start();   
+    {      
+        base.Start();
+
+        rb = GetComponent<Rigidbody2D>();
+        rb.sleepMode = RigidbodySleepMode2D.NeverSleep;
+
+        if (xVelocity <= 0)
+            xVelocity = 3;
+           
             
         if(projectileFireRate <=0)
         {
-            projectileFireRate = 2;
+            projectileFireRate = 4;
         }
             
-            }
+    }
 
     // Update is called once per frame
     void Update()
     {
+        //anim.SetBool("InRange", inRange);
 
         AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
 
-    
+        if (curPlayingClips[0].clip.name == "Walk")
+            {
+             if (sr.flipX)
+                  rb.velocity = new Vector2(xVelocity, rb.velocity.y);
+             else
+                 rb.velocity = new Vector2(-xVelocity, rb.velocity.y);
+            }
+        
+
         Distance = Vector2.Distance(gameObject.transform.position, GameManager.Instance.PlayerInstance.transform.position);
 
         if(Distance >= 10) 
         {
-            //anim.SetBool("Idle", true);
+            curPlayingClips[0].clip.name = "Walk";
+            inRange = false;
         }
         else if(Distance < 10) 
         {
-            //anim.SetBool("Idle", false);
+            inRange = true;
 
             if (curPlayingClips[0].clip.name != "Fire")
             {
+                rb.velocity = Vector2.zero;
                 if (Time.time > timeSinceLastFire + projectileFireRate)
                 {
                     anim.SetTrigger("Fire");
@@ -50,6 +73,7 @@ public class EnemyThrow : Enemy
                     Shoot shoot = GetComponent<Shoot>();
                     shoot.Fire();
                     Debug.Log("Throw");
+                    
                 }
             }
         }

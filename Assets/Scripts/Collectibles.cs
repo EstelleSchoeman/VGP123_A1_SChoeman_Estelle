@@ -17,9 +17,10 @@ public class Collectibles : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
-            {
-                Destroy(gameObject, timeToDestroy);
-            }
+        {
+            Destroy(gameObject, timeToDestroy);
+            Debug.Log("Diamond hit");
+        }
     }
 
 
