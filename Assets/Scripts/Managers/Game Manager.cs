@@ -7,11 +7,11 @@ using UnityEngine.Events;
 
 
 [DefaultExecutionOrder(-1)]
-[RequireComponent(typeof(Animator))]
+//[RequireComponent(typeof(Animator))]
 
 public class GameManager : MonoBehaviour
 {
-    protected Animator anim;
+    //protected Animator anim;
 
     public UnityEvent<int> OnLifeValueChanged;
 
@@ -69,8 +69,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
-        AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
+        //anim = GetComponent<Animator>();
+       // AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
 
         if (instance)
         {
