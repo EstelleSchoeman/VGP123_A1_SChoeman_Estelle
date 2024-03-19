@@ -68,8 +68,7 @@ public class EnemyThrow : Enemy
         else if(Distance < 10) 
         {
             inRange = true;
-            anim.SetTrigger("Fire");
-                        
+                                  
 
             if (curPlayingClips[0].clip.name != "Fire")
             {
