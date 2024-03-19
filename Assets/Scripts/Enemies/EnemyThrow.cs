@@ -27,9 +27,11 @@ public class EnemyThrow : Enemy
 
         if (xVelocity <= 0)
             xVelocity = 3;
-           
-            
-        if(projectileFireRate <=0)
+
+        
+
+
+        if (projectileFireRate <=0)
         {
             projectileFireRate = 4;
         }
@@ -44,6 +46,8 @@ public class EnemyThrow : Enemy
         AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
         Distance = Vector2.Distance(gameObject.transform.position, GameManager.Instance.PlayerInstance.transform.position);
 
+       
+
         if (curPlayingClips[0].clip.name == "Walk")
         {
             if (sr.flipX)
@@ -54,7 +58,7 @@ public class EnemyThrow : Enemy
 
         if (Distance >= 10) 
         {
-            curPlayingClips[0].clip.name = "Walk";
+            
             inRange = false;
             //anim.SetBool("Standing", false);
             if (xVelocity <= 0)
@@ -83,7 +87,7 @@ public class EnemyThrow : Enemy
 
             if(curPlayingClips[0].clip.name != "Fire" && inRange == true)
             {
-                curPlayingClips[0].clip.name = "Idel";
+                
                 rb.velocity = Vector2.zero;
             }
 

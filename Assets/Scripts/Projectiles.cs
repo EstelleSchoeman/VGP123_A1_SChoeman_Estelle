@@ -41,9 +41,10 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.tag);
-        if (collision.gameObject.tag != "ThrowingEnemy" && collision.gameObject.tag != "Chest"  )
+        Debug.Log("Projectile collided with " + collision.gameObject.tag);
+        if (collision.gameObject.tag != "ThrowingEnemy" && collision.gameObject.tag != "Chest" && collision.gameObject.tag != "ThrowEnemyHead")
         {
+            Debug.Log("Projectile destroyed by " + collision.gameObject.tag);
             lifeTime = 0.0f;
             Destroy(gameObject, lifeTime);
 

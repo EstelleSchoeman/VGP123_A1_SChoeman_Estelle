@@ -143,7 +143,7 @@ public class PlayerMovment : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1") && isGrounded == true)
         {
-            Debug.Log("Fire 1 Pressed");
+            //Debug.Log("Fire 1 Pressed");
             anim.SetBool("IsSwinging", true);
 
 
