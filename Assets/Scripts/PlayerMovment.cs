@@ -200,21 +200,49 @@ public class PlayerMovment : MonoBehaviour
         }
 
         Debug.Log(col.tag);
+
+        if (col.CompareTag("FallCollider"))
+        {
+            GameManager.Instance.lives--;
+        }
+
+        if(col.CompareTag("ThrowEnemyHead"))
+        {
+            anim = GetComponent<Animator>();
+            AnimatorClipInfo[] clipInfo = anim.GetCurrentAnimatorClipInfo(0);
+
+            if (clipInfo[0].clip.name == "JumpAttach")
+            {
+                Destroy(col.gameObject);
+                Destroy(col.gameObject.transform.parent.gameObject);
+                Debug.Log("Enemy head");
+            }
+        }
+
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "ThrowingEnemy")        {
+        if (collision.gameObject.tag == "ThrowingEnemy") 
+        {
             collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-            GameManager.Instance.lives--;
+            anim = GetComponent<Animator>();
+            AnimatorClipInfo[] clipInfo = anim.GetCurrentAnimatorClipInfo(0);
+            if (clipInfo[0].clip.name != "JumpAttach")
+            {
+                collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                GameManager.Instance.lives--;
 
-           // gotHurt = true;
-            anim.SetTrigger("playerHurt");           
-                       
-            //anim = GetComponent<Animator>();
-            //AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
-            //curPlayingClips[0].clip.name = "Hurt";
-            Debug.Log("On top!");
+            }
+
+                // gotHurt = true;
+                anim.SetTrigger("playerHurt");
+
+                //anim = GetComponent<Animator>();
+                //AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
+                //curPlayingClips[0].clip.name = "Hurt";
+                Debug.Log("On top!");
+            
         }
     }
 

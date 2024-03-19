@@ -10,6 +10,8 @@ TagManager:
   - EnemyProjectile
   - Test
   - Chest
+  - FallCollider
+  - ThrowEnemyHead
   layers:
   - Default
   - TransparentFX
