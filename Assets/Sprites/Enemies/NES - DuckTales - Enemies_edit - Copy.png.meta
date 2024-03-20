@@ -668,6 +668,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Spider_web
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 411
+        width: 1
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12012671208da744b87c6eade4ab4cb7
+      internalID: 1533868806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -685,7 +706,6 @@ TextureImporter:
       Enemy1_Walk 1: 1864426365
       Enemy1_Walk 2: 944225641
       Enemy1_Walk 3: 1549376340
-      NES - DuckTales - Enemies_edit - Copy_0: -66629226
       NES - DuckTales - Enemies_edit_0: -1120032295
       NES - DuckTales - Enemies_edit_1: -287631823
       NES - DuckTales - Enemies_edit_10: -1892749545
@@ -767,6 +787,7 @@ TextureImporter:
       Spider1: -350199064
       Spider2: 626853129
       Spider3: 1888434580
+      Spider_web: -66629226
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

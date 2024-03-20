@@ -9,11 +9,12 @@ public class EnemyThrow : Enemy
     Rigidbody2D rb;
     [SerializeField] float xVelocity;
   
-    public GameObject playerObject;
+    
     public float Distance;
     private bool inRange = false;
-    
 
+    [SerializeField] public int XwalkPositionA;
+    [SerializeField] public int XwalkPositionB;
     [SerializeField] float projectileFireRate;
     float timeSinceLastFire = 0;
 
@@ -28,7 +29,6 @@ public class EnemyThrow : Enemy
         if (xVelocity <= 0)
             xVelocity = 3;
 
-        
 
 
         if (projectileFireRate <=0)
@@ -46,29 +46,50 @@ public class EnemyThrow : Enemy
         AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
         Distance = Vector2.Distance(gameObject.transform.position, GameManager.Instance.PlayerInstance.transform.position);
 
-       
+        
+        
+
+            
+            if (Distance >= 10)
+            {
+            Debug.Log(inRange ? "Is in range" : "Is out of range");
+            Debug.Log("A : " + XwalkPositionA);
+            Debug.Log("B : " + XwalkPositionB);
+            Debug.Log("X : " + transform.position.x);
+            inRange = false;
+                if (transform.position.x < XwalkPositionA)
+                {
+                Debug.Log("Pat A");
+                    sr.flipX = true;
+                    if (xVelocity <= 0)
+                    { xVelocity = 3; }
+                }
+
+                else if (transform.position.x > XwalkPositionB)
+                {
+                Debug.Log("Pat B");
+                    sr.flipX = false;
+                    if (xVelocity <= 0)
+                    { xVelocity = 3; }
+                }
+
+            }
 
         if (curPlayingClips[0].clip.name == "Walk")
         {
+
             if (sr.flipX)
                 rb.velocity = new Vector2(xVelocity, rb.velocity.y);
             else
                 rb.velocity = new Vector2(-xVelocity, rb.velocity.y);
+
         }
 
-        if (Distance >= 10) 
-        {
-            
-            inRange = false;
-            //anim.SetBool("Standing", false);
-            if (xVelocity <= 0)
-                xVelocity = 3;
-        }
 
-        else if(Distance < 10) 
+        else if (Distance < 10)
         {
             inRange = true;
-                                  
+
 
             if (curPlayingClips[0].clip.name != "Fire")
             {
@@ -80,25 +101,35 @@ public class EnemyThrow : Enemy
                     Shoot shoot = GetComponent<Shoot>();
                     shoot.Fire();
                     Debug.Log("Throw");
-                    
+
                 }
             }
 
-            if(curPlayingClips[0].clip.name != "Fire" && inRange == true)
+            if (curPlayingClips[0].clip.name != "Fire" && inRange == true)
             {
-                
+
                 rb.velocity = Vector2.zero;
             }
 
+
+
+            if (GameManager.Instance.PlayerInstance.transform.position.x > transform.position.x)
+            {
+                sr.flipX = true;
+            }
+            else if (GameManager.Instance.PlayerInstance.transform.position.x < transform.position.x)
+            {
+                sr.flipX = false;
+            }
         }
         
-        if(GameManager.Instance.PlayerInstance.transform.position.x > transform.position.x) 
-        {
-            sr.flipX = true;
-        }
-        else if(GameManager.Instance.PlayerInstance.transform.position.x < transform.position.x)
-        {
-            sr.flipX = false;
-        }
     }
+
+    //private void throwEnemyWalk()
+    //{ 
+    //    if (transform.position.x == XwalkPositionA)
+     //   {
+     //   }
+    //
+    //}
 }
