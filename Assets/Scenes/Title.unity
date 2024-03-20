@@ -458,7 +458,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1804683673, guid: cb4453a2cd6d64e4d9871aadffb9c7a4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 020efc893622a66498a549a74641edc2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -574,6 +574,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnLifeValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnScoreValueChanged:
     m_PersistentCalls:
       m_Calls: []
   playerPrefab: {fileID: 7215720907969650394, guid: 0c8b7b91d9207b74ea57b2d144faeb14, type: 3}
@@ -1893,6 +1896,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 0}
   volSliderText: {fileID: 1588679828}
   livesText: {fileID: 0}
+  scoreText: {fileID: 0}
   volSlider: {fileID: 1350076721}
 --- !u!1 &1669515890
 GameObject:
@@ -2100,7 +2104,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: -850
+  m_Spacing: -700
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -2127,8 +2131,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -50}
+  m_SizeDelta: {x: 0, y: -100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2069938766
 GameObject:

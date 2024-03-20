@@ -52,14 +52,14 @@ public class EnemyThrow : Enemy
             
             if (Distance >= 10)
             {
-            Debug.Log(inRange ? "Is in range" : "Is out of range");
-            Debug.Log("A : " + XwalkPositionA);
-            Debug.Log("B : " + XwalkPositionB);
-            Debug.Log("X : " + transform.position.x);
+            //Debug.Log(inRange ? "Is in range" : "Is out of range");
+            //Debug.Log("A : " + XwalkPositionA);
+            //Debug.Log("B : " + XwalkPositionB);
+            //Debug.Log("X : " + transform.position.x);
             inRange = false;
                 if (transform.position.x < XwalkPositionA)
                 {
-                Debug.Log("Pat A");
+                //Debug.Log("Pat A");
                     sr.flipX = true;
                     if (xVelocity <= 0)
                     { xVelocity = 3; }
@@ -67,7 +67,7 @@ public class EnemyThrow : Enemy
 
                 else if (transform.position.x > XwalkPositionB)
                 {
-                Debug.Log("Pat B");
+               //Debug.Log("Pat B");
                     sr.flipX = false;
                     if (xVelocity <= 0)
                     { xVelocity = 3; }

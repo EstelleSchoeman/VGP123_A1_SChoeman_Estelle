@@ -20,6 +20,8 @@ public class Collectibles : MonoBehaviour
         {
             Destroy(gameObject, timeToDestroy);
             Debug.Log("Diamond hit");
+            GameManager.Instance.score += 1000;
+            Debug.Log("Score : " + GameManager.Instance.score);
         }
     }
 

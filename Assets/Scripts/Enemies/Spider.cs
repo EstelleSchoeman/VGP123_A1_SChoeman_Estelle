@@ -14,7 +14,7 @@ public class Spider : Enemy
     public float Distance;
 
     // spider and player in range bool
-    //private bool inRange = false;
+    private bool inRange = false;
 
     // Position A and B for haning 
     [SerializeField] public int y_hangPositionA;
@@ -34,7 +34,7 @@ public class Spider : Enemy
     void Update()
     {
         // set animation bool = scrip bool
-        //anim.SetBool("InRange", inRange);
+        anim.SetBool("InRange", inRange);
 
         AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
 
@@ -43,6 +43,7 @@ public class Spider : Enemy
 
         if (Distance < 5)
         {
+            inRange = true;
             rb.velocity = new Vector2(0, -yVelocity);
             if (transform.position.y < y_hangPositionB)
             {
@@ -51,6 +52,7 @@ public class Spider : Enemy
         }
         else if (Distance >= 5)
         {
+            inRange = false;
             rb.velocity = new Vector2(0, yVelocity);
             
             if (transform.position.y > y_hangPositionA)

@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     //protected Animator anim;
 
     public UnityEvent<int> OnLifeValueChanged;
+    public UnityEvent<int> OnScoreValueChanged;
 
     public static GameManager Instance => instance;
     static GameManager instance;
@@ -61,7 +62,11 @@ public class GameManager : MonoBehaviour
         set
         {
             _score = value;
+
+            if (OnScoreValueChanged != null)
+                OnScoreValueChanged.Invoke(_score);
         }
+
 
     }
 

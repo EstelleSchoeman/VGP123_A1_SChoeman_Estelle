@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Chest : MonoBehaviour
 {
@@ -31,7 +32,9 @@ public class Chest : MonoBehaviour
             if(PlayerclipInfo[0].clip.name == "JumpAttach")
                 {
                 Destroy(gameObject);
-                }
+                GameManager.Instance.score += 500;
+                Debug.Log("Score : " + GameManager.Instance.score);
+            }
             }
        
        // {

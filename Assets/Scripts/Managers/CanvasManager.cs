@@ -27,6 +27,7 @@ public class CanvasManager : MonoBehaviour
     [Header("Text")]
     public TMP_Text volSliderText;
     public TMP_Text livesText;
+    public TMP_Text scoreText;
 
     [Header("Slider")]
     public Slider volSlider;
@@ -71,6 +72,13 @@ public class CanvasManager : MonoBehaviour
             livesText.text = "Lives:" + GameManager.Instance.lives.ToString();
         }
 
+        if (scoreText)
+        {
+            GameManager.Instance.OnScoreValueChanged.AddListener(UpdateScoreText);
+            scoreText.text =  GameManager.Instance.score.ToString();
+        }
+
+
     }
     void OnSliderValueChanged(float value)
     {
@@ -81,6 +89,12 @@ public class CanvasManager : MonoBehaviour
     {
         livesText.text = "Lives:" + value.ToString();
         
+    }
+
+    void UpdateScoreText(int value)
+    {
+        scoreText.text = value.ToString();
+
     }
 
 
