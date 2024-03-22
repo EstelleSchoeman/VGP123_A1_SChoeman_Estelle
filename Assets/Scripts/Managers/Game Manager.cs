@@ -101,6 +101,8 @@ public class GameManager : MonoBehaviour
             // Escape = Game Over scene
             else if (SceneManager.GetActiveScene().name == "Escape")
                 buildIndex = 0;
+            else if (SceneManager.GetActiveScene().name == "Win")
+                buildIndex = 0;
             else
             {
                 buildIndex = 1;
@@ -157,12 +159,23 @@ public class GameManager : MonoBehaviour
         
     }
 
+
+    public void Win()
+    {
+        SceneManager.LoadScene(3);
+        Debug.Log("Win - @ col");
+
+    }
+
+   
+
+
     //public void hurt()
     //{
-        //anim = GetComponent<Animator>();
-        //AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
-        //curPlayingClips[0].clip.name = "Die";
-        //anim.SetBool("Dead", true); 
+    //anim = GetComponent<Animator>();
+    //AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
+    //curPlayingClips[0].clip.name = "Die";
+    //anim.SetBool("Dead", true); 
 
-   // }
+    // }
 }

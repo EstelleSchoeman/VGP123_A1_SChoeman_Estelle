@@ -31,6 +31,12 @@ public class PlayerMovment : MonoBehaviour
 
     // Audio clips
     [SerializeField] AudioClip pogoStickSound;
+    [SerializeField] AudioClip playerJumpSound;
+    [SerializeField] AudioClip playerClimbSound;
+    private float timeSinceLastPlayed;
+
+    [SerializeField] AudioClip playerKillThrowEnemySound;
+
     //[SerializeField] AudioClip hurtSound;
 
     private float _verticle;
@@ -123,13 +129,18 @@ public class PlayerMovment : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             Debug.Log("Is jumping");
             anim.SetBool("IsJumping", true);
+
+            if(clipInfo[0].clip.name != "JumpAttack" )
+            {
+                audioSource.PlayOneShot(playerJumpSound);
+            }
             
         }
 
         if (isGrounded == false && anim.GetBool("IsJumping") == true)
         {
             isAirborne = true;
-
+            
         }
 
 
@@ -145,7 +156,6 @@ public class PlayerMovment : MonoBehaviour
         {
             //Debug.Log("Fire 1 Pressed");
             anim.SetBool("IsSwinging", true);
-
 
         }
 
@@ -180,6 +190,13 @@ public class PlayerMovment : MonoBehaviour
         {
             isClimbing = true;
 
+            if (Time.time > timeSinceLastPlayed + (playerClimbSound.length)/3)
+            {
+                audioSource.PlayOneShot(playerClimbSound);
+                timeSinceLastPlayed = Time.time;
+                Debug.Log("Playing Vine sound");
+
+            }
         }
 
         else if (Vine.Count <= 0)
@@ -197,6 +214,7 @@ public class PlayerMovment : MonoBehaviour
         {
             Vine.Add(col.gameObject);
             Debug.Log("Enter Vine Col");
+            
         }
 
         Debug.Log(col.tag);
@@ -216,7 +234,13 @@ public class PlayerMovment : MonoBehaviour
                 Destroy(col.gameObject);
                 Destroy(col.gameObject.transform.parent.gameObject);
                 Debug.Log("Enemy head");
+                audioSource.PlayOneShot(playerKillThrowEnemySound);
             }
+        }
+
+        if (col.CompareTag("WinCol"))
+        {
+            GameManager.Instance.Win();
         }
 
     }

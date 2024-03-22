@@ -12,6 +12,7 @@ TagManager:
   - Chest
   - FallCollider
   - ThrowEnemyHead
+  - WinCol
   layers:
   - Default
   - TransparentFX

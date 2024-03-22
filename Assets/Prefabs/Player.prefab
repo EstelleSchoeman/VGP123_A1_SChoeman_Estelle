@@ -183,8 +183,10 @@ MonoBehaviour:
   groundCheckRadius: 0.02
   isGrounded: 0
   isAirborne: 0
-  pogoStickSound: {fileID: 8300000, guid: 059bed10276a77843b0a08afe888f8e4, type: 3}
-  hurtSound: {fileID: 8300000, guid: d454a76dd508e72499642b97914a2e0e, type: 3}
+  pogoStickSound: {fileID: 8300000, guid: ab82cdf46e1354a42a45696ef5dd62fc, type: 3}
+  playerJumpSound: {fileID: 8300000, guid: df9be1ca836a1ad46b1e36d62fa8e091, type: 3}
+  playerClimbSound: {fileID: 8300000, guid: f27a3dfe501bac141a9b894982fe2665, type: 3}
+  playerKillThrowEnemySound: {fileID: 8300000, guid: e57911df64a862a4a82e3cea51175b4e, type: 3}
   climbspeed: 4
 --- !u!95 &4832830532791767670
 Animator:
