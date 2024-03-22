@@ -33,6 +33,7 @@ public class PlayerMovment : MonoBehaviour
     [SerializeField] AudioClip pogoStickSound;
     [SerializeField] AudioClip playerJumpSound;
     [SerializeField] AudioClip playerClimbSound;
+    [SerializeField] AudioClip LoseLifeSound;
     private float timeSinceLastPlayed;
 
     [SerializeField] AudioClip playerKillThrowEnemySound;
@@ -222,6 +223,7 @@ public class PlayerMovment : MonoBehaviour
         if (col.CompareTag("FallCollider"))
         {
             GameManager.Instance.lives--;
+            audioSource.PlayOneShot(LoseLifeSound);
         }
 
         if(col.CompareTag("ThrowEnemyHead"))
@@ -256,7 +258,7 @@ public class PlayerMovment : MonoBehaviour
             {
                 collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                 GameManager.Instance.lives--;
-
+                audioSource.PlayOneShot(LoseLifeSound);
             }
 
                 // gotHurt = true;

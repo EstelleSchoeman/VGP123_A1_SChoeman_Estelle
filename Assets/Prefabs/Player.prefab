@@ -186,6 +186,7 @@ MonoBehaviour:
   pogoStickSound: {fileID: 8300000, guid: ab82cdf46e1354a42a45696ef5dd62fc, type: 3}
   playerJumpSound: {fileID: 8300000, guid: df9be1ca836a1ad46b1e36d62fa8e091, type: 3}
   playerClimbSound: {fileID: 8300000, guid: f27a3dfe501bac141a9b894982fe2665, type: 3}
+  LoseLifeSound: {fileID: 8300000, guid: 934480cf1851645449241f2ccb876d07, type: 3}
   playerKillThrowEnemySound: {fileID: 8300000, guid: e57911df64a862a4a82e3cea51175b4e, type: 3}
   climbspeed: 4
 --- !u!95 &4832830532791767670
@@ -218,7 +219,7 @@ AudioSource:
   m_GameObject: {fileID: 1131435341092626964}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -8391367394575374772, guid: f43e32d42ba29a94cb712f57707a7823, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1

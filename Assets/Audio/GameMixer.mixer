@@ -85,7 +85,7 @@ AudioMixerController:
   - guid: 623958e0fa8abbf4db091806c754a7de
     name: MasterVol
   - guid: 5c11581145691bf4aab45074ec118a00
-    name: Music Vol
+    name: MusicVol
   - guid: ee9c9648b22525743af467fdaa066079
     name: sfxVol
   m_AudioMixerGroupViews:

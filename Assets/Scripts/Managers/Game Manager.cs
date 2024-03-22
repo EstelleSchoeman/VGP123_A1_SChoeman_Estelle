@@ -149,6 +149,7 @@ public class GameManager : MonoBehaviour
     void GameOver()
     {
        SceneManager.LoadScene(2);
+       ResetGame();
 
     }
 

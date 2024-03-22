@@ -31,7 +31,7 @@ public class CanvasManager : MonoBehaviour
     public TMP_Text MasterVolSliderText;
     public TMP_Text MusicVolSliderText;
     public TMP_Text SFXVolSliderText;
-    public TMP_Text livesText;
+    //public TMP_Text livesText;
     public TMP_Text scoreText;
 
     [Header("Slider")]
@@ -96,11 +96,11 @@ public class CanvasManager : MonoBehaviour
                 SFXVolSliderText.text = SFXVolSlider.value.ToString();
         }
 
-        if (livesText)
-        {
-            GameManager.Instance.OnLifeValueChanged.AddListener(UpdateLifeText);
-            livesText.text = "Lives:" + GameManager.Instance.lives.ToString();
-        }
+        //if (livesText)
+        //{
+        //    GameManager.Instance.OnLifeValueChanged.AddListener(UpdateLifeText);
+        //    livesText.text = "Lives:" + GameManager.Instance.lives.ToString();
+        //}
 
         if (scoreText)
         {
@@ -116,11 +116,11 @@ public class CanvasManager : MonoBehaviour
         audioMixer.SetFloat(paramName, value - 80);
     }
 
-    void UpdateLifeText(int value)
-    {
-        livesText.text = "Lives:" + value.ToString();
-        
-    }
+    //void UpdateLifeText(int value)
+    //{
+     //   livesText.text = "Lives:" + value.ToString();
+     //   
+   // }
 
     void UpdateScoreText(int value)
     {

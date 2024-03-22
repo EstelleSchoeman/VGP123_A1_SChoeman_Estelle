@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: ed372ff0f89063649b661bb012a99f5e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NES - DuckTales - Enemies_edit_ correct_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 379
+        width: 31
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f298b3dda83310544872d69b5b274578
+      internalID: -1154579928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Enemies_edit_ correct_16
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 379
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8171934573b3a7f4682328555afb9d2c
+      internalID: -1050285532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - DuckTales - Enemies_edit_ correct_17
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 378
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c2e123a5553a943907ce386e71f3dd
+      internalID: 6036528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyThrowWalk1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 301
+        width: 21
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f46cd70740d70b4e876b4eae2987c3e
+      internalID: -231621865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyThrowWalk2
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 301
+        width: 21
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0b3f927f9b4e64e8cbdcf118905985
+      internalID: -527116159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyThrowWalk3
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 301
+        width: 24
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7f8d9ce87334142aa61eaf67064210
+      internalID: 1395218468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyThrowing1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 301
+        width: 32
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8596bec9274639f469efed5dc7240fc9
+      internalID: -1524276360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyThrowingProjectile
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 317
+        width: 24
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215122bd2b36ce749ab585ccb145e1dd
+      internalID: -719290362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyThrowing2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 301
+        width: 28
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e1d768effc44f4285f14249255bed5
+      internalID: 1940437161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      EnemyThrowWalk1: -231621865
+      EnemyThrowWalk2: -527116159
+      EnemyThrowWalk3: 1395218468
+      EnemyThrowing1: -1524276360
+      EnemyThrowing2: 1940437161
+      EnemyThrowingProjectile: -719290362
+      NES - DuckTales - Enemies_edit_ correct_0: -1368427780
+      NES - DuckTales - Enemies_edit_ correct_1: 626907368
+      NES - DuckTales - Enemies_edit_ correct_10: -313267668
+      NES - DuckTales - Enemies_edit_ correct_11: -1754327150
+      NES - DuckTales - Enemies_edit_ correct_12: -203401308
+      NES - DuckTales - Enemies_edit_ correct_13: 259171517
+      NES - DuckTales - Enemies_edit_ correct_14: -586814876
+      NES - DuckTales - Enemies_edit_ correct_15: -1154579928
+      NES - DuckTales - Enemies_edit_ correct_16: -1050285532
+      NES - DuckTales - Enemies_edit_ correct_17: 6036528
+      NES - DuckTales - Enemies_edit_ correct_18: 150106855
+      NES - DuckTales - Enemies_edit_ correct_19: -1347160553
+      NES - DuckTales - Enemies_edit_ correct_2: 969911660
+      NES - DuckTales - Enemies_edit_ correct_20: 601767228
+      NES - DuckTales - Enemies_edit_ correct_21: 1488196459
+      NES - DuckTales - Enemies_edit_ correct_22: 1437079692
+      NES - DuckTales - Enemies_edit_ correct_29: -1003163253
+      NES - DuckTales - Enemies_edit_ correct_3: 966133909
+      NES - DuckTales - Enemies_edit_ correct_30: -1753839697
+      NES - DuckTales - Enemies_edit_ correct_31: 1723231028
+      NES - DuckTales - Enemies_edit_ correct_32: 695488954
+      NES - DuckTales - Enemies_edit_ correct_33: 2124708430
+      NES - DuckTales - Enemies_edit_ correct_34: 447765732
+      NES - DuckTales - Enemies_edit_ correct_35: -1150588778
+      NES - DuckTales - Enemies_edit_ correct_36: -1388276156
+      NES - DuckTales - Enemies_edit_ correct_37: -1053244717
+      NES - DuckTales - Enemies_edit_ correct_38: 64083579
+      NES - DuckTales - Enemies_edit_ correct_39: -206806611
+      NES - DuckTales - Enemies_edit_ correct_4: -1099513405
+      NES - DuckTales - Enemies_edit_ correct_40: -542401838
+      NES - DuckTales - Enemies_edit_ correct_41: 1338095820
+      NES - DuckTales - Enemies_edit_ correct_42: 581463576
+      NES - DuckTales - Enemies_edit_ correct_43: -1619515678
+      NES - DuckTales - Enemies_edit_ correct_44: 1149431524
+      NES - DuckTales - Enemies_edit_ correct_45: -1537759149
+      NES - DuckTales - Enemies_edit_ correct_46: -1397671496
+      NES - DuckTales - Enemies_edit_ correct_47: -1868485787
+      NES - DuckTales - Enemies_edit_ correct_48: -1717616134
+      NES - DuckTales - Enemies_edit_ correct_49: -1152217055
+      NES - DuckTales - Enemies_edit_ correct_5: -1738207236
+      NES - DuckTales - Enemies_edit_ correct_50: -52506493
+      NES - DuckTales - Enemies_edit_ correct_51: -2068500416
+      NES - DuckTales - Enemies_edit_ correct_52: -1840331452
+      NES - DuckTales - Enemies_edit_ correct_53: 1110826183
+      NES - DuckTales - Enemies_edit_ correct_54: 2035726371
+      NES - DuckTales - Enemies_edit_ correct_55: 1375777586
+      NES - DuckTales - Enemies_edit_ correct_56: -1143848546
+      NES - DuckTales - Enemies_edit_ correct_57: 10701975
+      NES - DuckTales - Enemies_edit_ correct_58: -1400122863
+      NES - DuckTales - Enemies_edit_ correct_59: 451587060
+      NES - DuckTales - Enemies_edit_ correct_6: -1265911400
+      NES - DuckTales - Enemies_edit_ correct_60: -1163070606
+      NES - DuckTales - Enemies_edit_ correct_61: -1806976885
+      NES - DuckTales - Enemies_edit_ correct_62: -1736033470
+      NES - DuckTales - Enemies_edit_ correct_63: 2033781532
+      NES - DuckTales - Enemies_edit_ correct_64: -1794843287
+      NES - DuckTales - Enemies_edit_ correct_65: -1449033359
+      NES - DuckTales - Enemies_edit_ correct_66: -1986097531
+      NES - DuckTales - Enemies_edit_ correct_67: -1027706950
+      NES - DuckTales - Enemies_edit_ correct_68: 1582921536
+      NES - DuckTales - Enemies_edit_ correct_69: -775798129
+      NES - DuckTales - Enemies_edit_ correct_7: 1353369146
+      NES - DuckTales - Enemies_edit_ correct_70: -1907936919
+      NES - DuckTales - Enemies_edit_ correct_71: -77008614
+      NES - DuckTales - Enemies_edit_ correct_72: -434638380
+      NES - DuckTales - Enemies_edit_ correct_73: -1936641322
+      NES - DuckTales - Enemies_edit_ correct_74: 1322709223
+      NES - DuckTales - Enemies_edit_ correct_75: 1572683080
+      NES - DuckTales - Enemies_edit_ correct_76: 27710353
+      NES - DuckTales - Enemies_edit_ correct_77: 34035770
+      NES - DuckTales - Enemies_edit_ correct_78: 945123045
+      NES - DuckTales - Enemies_edit_ correct_79: -635182358
+      NES - DuckTales - Enemies_edit_ correct_8: 199038321
+      NES - DuckTales - Enemies_edit_ correct_80: 1013714026
+      NES - DuckTales - Enemies_edit_ correct_81: 807781796
+      NES - DuckTales - Enemies_edit_ correct_82: 232771717
+      NES - DuckTales - Enemies_edit_ correct_83: -1710601273
+      NES - DuckTales - Enemies_edit_ correct_84: 1039302740
+      NES - DuckTales - Enemies_edit_ correct_85: -1504196543
+      NES - DuckTales - Enemies_edit_ correct_86: -1287838216
+      NES - DuckTales - Enemies_edit_ correct_9: -438798859
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

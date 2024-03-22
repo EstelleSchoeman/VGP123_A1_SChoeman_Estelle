@@ -4,7 +4,16 @@ using UnityEngine;
 
 public class Collectibles : MonoBehaviour
 {
+    AudioSource audioSource;
 
+    [SerializeField] AudioClip DiamondSound;
+
+    void Start()
+    {
+        
+        audioSource = GetComponent<AudioSource>();
+
+    }
     public enum PickupType
     {
         Diamond,
@@ -12,13 +21,14 @@ public class Collectibles : MonoBehaviour
     }
 
     [SerializeField] PickupType currentCollectible;
-    [SerializeField] float timeToDestroy = 0f;
+    //[SerializeField] float timeToDestroy = 0f;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            Destroy(gameObject, timeToDestroy);
+            audioSource.PlayOneShot(DiamondSound);
+            Destroy(gameObject, DiamondSound.length);
             Debug.Log("Diamond hit");
             GameManager.Instance.score += 1000;
             Debug.Log("Score : " + GameManager.Instance.score);
@@ -27,29 +37,8 @@ public class Collectibles : MonoBehaviour
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
