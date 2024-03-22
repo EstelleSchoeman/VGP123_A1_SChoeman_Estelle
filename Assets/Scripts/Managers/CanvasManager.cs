@@ -5,9 +5,12 @@ using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
+using UnityEngine.Audio;
 
 public class CanvasManager : MonoBehaviour
 {
+    public AudioMixer audioMixer;
+
     public static bool pausedTime = false;
 
     [Header("Button")]
@@ -25,12 +28,16 @@ public class CanvasManager : MonoBehaviour
     public GameObject pauseMenu;
 
     [Header("Text")]
-    public TMP_Text volSliderText;
+    public TMP_Text MasterVolSliderText;
+    public TMP_Text MusicVolSliderText;
+    public TMP_Text SFXVolSliderText;
     public TMP_Text livesText;
     public TMP_Text scoreText;
 
     [Header("Slider")]
-    public Slider volSlider;
+    public Slider MasterVolSlider;
+    public Slider MusicVolSlider;
+    public Slider SFXVolSlider;
 
 
     // Start is called before the first frame update
@@ -59,14 +66,37 @@ public class CanvasManager : MonoBehaviour
         if (backButton)
             backButton.onClick.AddListener(() => SetMenus(mainMenu, settingMenu));
         
-        if(volSlider)
+        if(MasterVolSlider)
         {
-            volSlider.onValueChanged.AddListener(OnSliderValueChanged);
-            if(volSliderText)
-                volSliderText.text = volSlider.value.ToString();
+            MasterVolSlider.onValueChanged.AddListener((value)=>OnSliderValueChanged(value, MasterVolSliderText, "MasterVol"));
+            float mixerValue;
+            audioMixer.GetFloat("MasterVol", out mixerValue);
+            MasterVolSlider.value = mixerValue + 80;
+            if (MasterVolSliderText)
+                MasterVolSliderText.text = MasterVolSlider.value.ToString();
         }
 
-        if(livesText)
+        if (MusicVolSlider)
+        {
+            MusicVolSlider.onValueChanged.AddListener((value) => OnSliderValueChanged(value, MusicVolSliderText, "MusicVol"));
+            float mixerValue;
+            audioMixer.GetFloat("MusicVol", out mixerValue);
+            MusicVolSlider.value = mixerValue + 80;
+            if (MusicVolSliderText)
+                MusicVolSliderText.text = MusicVolSlider.value.ToString();
+        }
+
+        if (SFXVolSlider)
+        {
+            SFXVolSlider.onValueChanged.AddListener((value) => OnSliderValueChanged(value, SFXVolSliderText, "sfxVol"));
+            float mixerValue;
+            audioMixer.GetFloat("sfxVol", out mixerValue);
+            SFXVolSlider.value = mixerValue + 80;
+            if (SFXVolSliderText)
+                SFXVolSliderText.text = SFXVolSlider.value.ToString();
+        }
+
+        if (livesText)
         {
             GameManager.Instance.OnLifeValueChanged.AddListener(UpdateLifeText);
             livesText.text = "Lives:" + GameManager.Instance.lives.ToString();
@@ -80,9 +110,10 @@ public class CanvasManager : MonoBehaviour
 
 
     }
-    void OnSliderValueChanged(float value)
+    void OnSliderValueChanged(float value,TMP_Text volSliderText, string paramName)
     {
         volSliderText.text = value.ToString();
+        audioMixer.SetFloat(paramName, value - 80);
     }
 
     void UpdateLifeText(int value)
