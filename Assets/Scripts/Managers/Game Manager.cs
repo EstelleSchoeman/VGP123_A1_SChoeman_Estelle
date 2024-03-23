@@ -19,14 +19,22 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance => instance;
     static GameManager instance;
 
+
     [SerializeField] PlayerMovment playerPrefab;
+
+
     public PlayerMovment PlayerInstance => playerInstance;
     PlayerMovment playerInstance = null;
     Transform currentCheckpoint;
 
 
     [SerializeField] int maxLives = 5;
-   
+
+    public AudioSource BGM;
+    public AudioClip newTrackTitle;
+    public AudioClip newTrackLevel;
+    public AudioClip newTrackWin;
+    public AudioClip newTrackGameOver;
 
     private int _lives;
     public int lives
@@ -45,10 +53,10 @@ public class GameManager : MonoBehaviour
                 _lives = maxLives;
 
             if (lives < 1)
-               GameOver(); 
+                GameOver();
 
-            if(OnLifeValueChanged != null)
-            OnLifeValueChanged.Invoke(_lives);
+            if (OnLifeValueChanged != null)
+                OnLifeValueChanged.Invoke(_lives);
 
         }
     }
@@ -70,12 +78,12 @@ public class GameManager : MonoBehaviour
 
     }
 
-    
+
     // Start is called before the first frame update
     void Start()
     {
         //anim = GetComponent<Animator>();
-       // AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
+        // AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
 
         if (instance)
         {
@@ -84,8 +92,8 @@ public class GameManager : MonoBehaviour
 
         }
 
-    instance = this;
-    DontDestroyOnLoad(gameObject);
+        instance = this;
+        DontDestroyOnLoad(gameObject);
         _lives = maxLives;
 
     }
@@ -110,11 +118,11 @@ public class GameManager : MonoBehaviour
             }
 
             SceneManager.LoadScene(buildIndex);
-                        
+
         }
 
 
-        if(Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             UpdateCheckPoint(GameObject.FindGameObjectWithTag("Test").transform);
         }
@@ -123,6 +131,20 @@ public class GameManager : MonoBehaviour
     public void ChangeScene(int buildIndex)
     {
         SceneManager.LoadScene(buildIndex);
+        if (buildIndex == 0)
+        {
+            ChangeBGM(newTrackTitle);
+        }
+        else if (buildIndex == 1)
+        {
+            ChangeBGM(newTrackLevel);
+        }
+        else if (buildIndex == 2)
+        {
+            ChangeBGM(newTrackGameOver);
+        }
+        else
+            ChangeBGM(newTrackWin);
     }
 
     public void spawnPlayer(Transform spawnLocation)
@@ -148,16 +170,16 @@ public class GameManager : MonoBehaviour
 
     void GameOver()
     {
-       SceneManager.LoadScene(2);
-       ResetGame();
+        SceneManager.LoadScene(2);
+        ResetGame();
 
     }
 
     void ResetGame()
     {
-       _lives = maxLives;
-        
-        
+        _lives = maxLives;
+
+
     }
 
 
@@ -168,7 +190,18 @@ public class GameManager : MonoBehaviour
 
     }
 
-   
+    public void ChangeBGM(AudioClip music)
+    {
+        if (BGM.clip.name == music.name)
+            return;
+
+        BGM.Stop();
+        BGM.clip = music;
+        BGM.Play(); 
+    }
+
+}
+
 
 
     //public void hurt()
@@ -179,4 +212,3 @@ public class GameManager : MonoBehaviour
     //anim.SetBool("Dead", true); 
 
     // }
-}

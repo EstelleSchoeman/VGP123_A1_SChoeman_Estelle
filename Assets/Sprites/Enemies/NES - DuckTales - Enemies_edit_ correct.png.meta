@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NES - DuckTales - Enemies_edit_ correct_15
+      name: Spider1
       rect:
         serializedVersion: 2
         x: 2
         y: 379
-        width: 31
-        height: 47
+        width: 32
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,13 +144,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - DuckTales - Enemies_edit_ correct_16
+      name: Spider2
       rect:
         serializedVersion: 2
         x: 38
         y: 379
-        width: 32
-        height: 48
+        width: 31
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,7 +165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - DuckTales - Enemies_edit_ correct_17
+      name: Spider3
       rect:
         serializedVersion: 2
         x: 72
@@ -311,6 +311,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: SpiderWeb
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 411
+        width: 1
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c0ff14b31336648bab045970e68a48
+      internalID: 958228997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -328,16 +349,12 @@ TextureImporter:
       EnemyThrowing1: -1524276360
       EnemyThrowing2: 1940437161
       EnemyThrowingProjectile: -719290362
-      NES - DuckTales - Enemies_edit_ correct_0: -1368427780
       NES - DuckTales - Enemies_edit_ correct_1: 626907368
       NES - DuckTales - Enemies_edit_ correct_10: -313267668
       NES - DuckTales - Enemies_edit_ correct_11: -1754327150
       NES - DuckTales - Enemies_edit_ correct_12: -203401308
       NES - DuckTales - Enemies_edit_ correct_13: 259171517
       NES - DuckTales - Enemies_edit_ correct_14: -586814876
-      NES - DuckTales - Enemies_edit_ correct_15: -1154579928
-      NES - DuckTales - Enemies_edit_ correct_16: -1050285532
-      NES - DuckTales - Enemies_edit_ correct_17: 6036528
       NES - DuckTales - Enemies_edit_ correct_18: 150106855
       NES - DuckTales - Enemies_edit_ correct_19: -1347160553
       NES - DuckTales - Enemies_edit_ correct_2: 969911660
@@ -409,6 +426,10 @@ TextureImporter:
       NES - DuckTales - Enemies_edit_ correct_85: -1504196543
       NES - DuckTales - Enemies_edit_ correct_86: -1287838216
       NES - DuckTales - Enemies_edit_ correct_9: -438798859
+      Spider1: -1154579928
+      Spider2: -1050285532
+      Spider3: 6036528
+      SpiderWeb: -1368427780
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -13,6 +13,7 @@ TagManager:
   - FallCollider
   - ThrowEnemyHead
   - WinCol
+  - Spider
   layers:
   - Default
   - TransparentFX

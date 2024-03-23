@@ -1142,6 +1142,11 @@ MonoBehaviour:
       m_Calls: []
   playerPrefab: {fileID: 7215720907969650394, guid: 0c8b7b91d9207b74ea57b2d144faeb14, type: 3}
   maxLives: 5
+  BGM: {fileID: 556169428}
+  newTrackTitle: {fileID: 8300000, guid: 0879d0299e6ca4948be28927cf31a895, type: 3}
+  newTrackLevel: {fileID: 8300000, guid: eb2d3b35029ebba4795e3a645fc6430e, type: 3}
+  newTrackWin: {fileID: 8300000, guid: 406b161676970344ba02bbdee965746a, type: 3}
+  newTrackGameOver: {fileID: 8300000, guid: 406b161676970344ba02bbdee965746a, type: 3}
 --- !u!4 &556169427
 Transform:
   m_ObjectHideFlags: 0

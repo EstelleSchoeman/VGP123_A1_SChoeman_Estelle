@@ -211,6 +211,14 @@ public class PlayerMovment : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+        AnimatorClipInfo[] clipInfo = anim.GetCurrentAnimatorClipInfo(0);
+        if (col.CompareTag("Spider") && clipInfo[0].clip.name != "JumpAttach")
+        {
+            
+            audioSource.PlayOneShot(LoseLifeSound);
+
+        }
+
         if (col.CompareTag("Vine"))
         {
             Vine.Add(col.gameObject);
@@ -229,7 +237,7 @@ public class PlayerMovment : MonoBehaviour
         if(col.CompareTag("ThrowEnemyHead"))
         {
             anim = GetComponent<Animator>();
-            AnimatorClipInfo[] clipInfo = anim.GetCurrentAnimatorClipInfo(0);
+            
 
             if (clipInfo[0].clip.name == "JumpAttach")
             {

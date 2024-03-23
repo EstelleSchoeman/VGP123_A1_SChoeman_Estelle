@@ -5,6 +5,10 @@ using UnityEngine;
 public class Spider : Enemy
 {
 
+    AudioSource audioSource;
+
+    [SerializeField] AudioClip playerKillThrowEnemySound;
+
     Rigidbody2D rb;
     // Y- Velocity of the spider
     [SerializeField] float yVelocity = 10;
@@ -19,7 +23,8 @@ public class Spider : Enemy
     // Position A and B for haning 
     [SerializeField] public int y_hangPositionA;
     [SerializeField] public int y_hangPositionB;
-    
+
+
 
     // Start is called before the first frame update
     public override void Start()
@@ -28,6 +33,7 @@ public class Spider : Enemy
         base.Start();
 
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -54,16 +60,36 @@ public class Spider : Enemy
         {
             inRange = false;
             rb.velocity = new Vector2(0, yVelocity);
-            
+
             if (transform.position.y > y_hangPositionA)
             {
                 rb.velocity = Vector2.zero;
             }
         }
 
+    }
 
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        Animator playerAnimator = GameManager.Instance.PlayerInstance.GetComponent<Animator>();
 
+        AnimatorClipInfo[] curPlayingClips = playerAnimator.GetCurrentAnimatorClipInfo(0);
 
+        
+          if (col.CompareTag("Player") && curPlayingClips[0].clip.name != "JumpAttach")
+            {
+                GameManager.Instance.lives--;
+                //audioSource.PlayOneShot(LoseLifeSound);
+
+                
+            }
+
+        if (curPlayingClips[0].clip.name == "JumpAttach")
+        {
+            audioSource.PlayOneShot(playerKillThrowEnemySound);
+            Destroy(gameObject, (playerKillThrowEnemySound.length)/2);
+
+        }
 
     }
 }
