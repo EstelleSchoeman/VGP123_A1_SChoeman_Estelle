@@ -215,8 +215,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xVelocity: 0
-  playerObject: {fileID: 1131435341092626964, guid: 0c8b7b91d9207b74ea57b2d144faeb14, type: 3}
   Distance: 0
+  CloseDistance: 6
+  XwalkPositionA: 27
+  XwalkPositionB: 34
   projectileFireRate: 3
 --- !u!1 &1390956693187854256
 GameObject:

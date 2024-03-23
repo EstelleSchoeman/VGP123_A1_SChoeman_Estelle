@@ -53,8 +53,10 @@ public class Projectile : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             GameManager.Instance.lives--;
+            Animator anim = GameManager.Instance.PlayerInstance.GetComponent<Animator>();
+            anim.SetTrigger("playerHurt");
             Debug.Log("Lives:" + GameManager.Instance.lives);
-            audioSource.PlayOneShot(hurtSound);
+            GameManager.Instance.PlayerInstance.AudioSource.PlayOneShot(hurtSound);
 
         }
     }

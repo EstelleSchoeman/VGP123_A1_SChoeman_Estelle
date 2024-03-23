@@ -16,7 +16,7 @@ public class PlayerMovment : MonoBehaviour
     Rigidbody2D rb;
     SpriteRenderer sr;
     Animator anim;
-    AudioSource audioSource;
+    public AudioSource AudioSource;
 
     // *E: Shows under player Movment script
     [SerializeField] float speed = 7.0f;
@@ -52,7 +52,7 @@ public class PlayerMovment : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
+        AudioSource = GetComponent<AudioSource>();
 
         if (speed <= 0)
         {
@@ -133,7 +133,7 @@ public class PlayerMovment : MonoBehaviour
 
             if(clipInfo[0].clip.name != "JumpAttack" )
             {
-                audioSource.PlayOneShot(playerJumpSound);
+                AudioSource.PlayOneShot(playerJumpSound);
             }
             
         }
@@ -177,7 +177,7 @@ public class PlayerMovment : MonoBehaviour
             if (Input.GetButtonDown("Fire1"))
             {
                 anim.SetTrigger("JumpAttack");
-                audioSource.PlayOneShot(pogoStickSound);
+                AudioSource.PlayOneShot(pogoStickSound);
             }
 
           
@@ -193,7 +193,7 @@ public class PlayerMovment : MonoBehaviour
 
             if (Time.time > timeSinceLastPlayed + (playerClimbSound.length)/3)
             {
-                audioSource.PlayOneShot(playerClimbSound);
+                AudioSource.PlayOneShot(playerClimbSound);
                 timeSinceLastPlayed = Time.time;
                 Debug.Log("Playing Vine sound");
 
@@ -215,7 +215,7 @@ public class PlayerMovment : MonoBehaviour
         if (col.CompareTag("Spider") && clipInfo[0].clip.name != "JumpAttach")
         {
             
-            audioSource.PlayOneShot(LoseLifeSound);
+            AudioSource.PlayOneShot(LoseLifeSound);
 
         }
 
@@ -231,7 +231,7 @@ public class PlayerMovment : MonoBehaviour
         if (col.CompareTag("FallCollider"))
         {
             GameManager.Instance.lives--;
-            audioSource.PlayOneShot(LoseLifeSound);
+            AudioSource.PlayOneShot(LoseLifeSound);
         }
 
         if(col.CompareTag("ThrowEnemyHead"))
@@ -244,7 +244,7 @@ public class PlayerMovment : MonoBehaviour
                 Destroy(col.gameObject);
                 Destroy(col.gameObject.transform.parent.gameObject);
                 Debug.Log("Enemy head");
-                audioSource.PlayOneShot(playerKillThrowEnemySound);
+                AudioSource.PlayOneShot(playerKillThrowEnemySound);
             }
         }
 
@@ -266,11 +266,12 @@ public class PlayerMovment : MonoBehaviour
             {
                 collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                 GameManager.Instance.lives--;
-                audioSource.PlayOneShot(LoseLifeSound);
+                AudioSource.PlayOneShot(LoseLifeSound);
+                anim.SetTrigger("playerHurt");
             }
 
                 // gotHurt = true;
-                anim.SetTrigger("playerHurt");
+                
 
                 //anim = GetComponent<Animator>();
                 //AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);

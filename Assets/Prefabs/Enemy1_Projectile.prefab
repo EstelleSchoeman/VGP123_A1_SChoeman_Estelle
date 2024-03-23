@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeTime: 5
   initialVelocity: {x: 4, y: 4}
-  hurtSound: {fileID: 0}
+  hurtSound: {fileID: 8300000, guid: 934480cf1851645449241f2ccb876d07, type: 3}
 --- !u!50 &5649977072995323342
 Rigidbody2D:
   serializedVersion: 4
@@ -174,7 +174,7 @@ AudioSource:
   m_GameObject: {fileID: 3414897148768756016}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -8391367394575374772, guid: f43e32d42ba29a94cb712f57707a7823, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1

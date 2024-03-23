@@ -11,6 +11,7 @@ public class EnemyThrow : Enemy
   
     
     public float Distance;
+    public float CloseDistance = 6;
     private bool inRange = false;
 
     [SerializeField] public int XwalkPositionA;
@@ -50,7 +51,7 @@ public class EnemyThrow : Enemy
         
 
             
-            if (Distance >= 10)
+            if (Distance >= CloseDistance)
             {
             //Debug.Log(inRange ? "Is in range" : "Is out of range");
             //Debug.Log("A : " + XwalkPositionA);
@@ -75,18 +76,10 @@ public class EnemyThrow : Enemy
 
             }
 
-        if (curPlayingClips[0].clip.name == "Walk")
-        {
-
-            if (sr.flipX)
-                rb.velocity = new Vector2(xVelocity, rb.velocity.y);
-            else
-                rb.velocity = new Vector2(-xVelocity, rb.velocity.y);
-
-        }
 
 
-        else if (Distance < 10)
+
+        else if (Distance < CloseDistance)
         {
             inRange = true;
 
@@ -122,7 +115,17 @@ public class EnemyThrow : Enemy
                 sr.flipX = false;
             }
         }
-        
+
+        if (curPlayingClips[0].clip.name == "Walk")
+        {
+
+            if (sr.flipX)
+                rb.velocity = new Vector2(xVelocity, rb.velocity.y);
+            else
+                rb.velocity = new Vector2(-xVelocity, rb.velocity.y);
+
+        }
+
     }
 
     //private void throwEnemyWalk()

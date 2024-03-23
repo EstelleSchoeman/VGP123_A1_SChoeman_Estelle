@@ -178,6 +178,7 @@ public class GameManager : MonoBehaviour
     void ResetGame()
     {
         _lives = maxLives;
+        _score = 0;
 
 
     }
@@ -187,6 +188,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(3);
         Debug.Log("Win - @ col");
+        ResetGame();
 
     }
 

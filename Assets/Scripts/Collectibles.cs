@@ -28,7 +28,7 @@ public class Collectibles : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             audioSource.PlayOneShot(DiamondSound);
-            Destroy(gameObject, DiamondSound.length);
+            Destroy(gameObject, (DiamondSound.length)/2);
             Debug.Log("Diamond hit");
             GameManager.Instance.score += 1000;
             Debug.Log("Score : " + GameManager.Instance.score);

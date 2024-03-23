@@ -34,6 +34,8 @@ public class Spider : Enemy
 
         rb = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
+
+        anim.SetBool("Alive", true);
     }
 
     // Update is called once per frame
@@ -86,6 +88,7 @@ public class Spider : Enemy
 
         if (curPlayingClips[0].clip.name == "JumpAttach")
         {
+            anim.SetBool("Alive", false);
             audioSource.PlayOneShot(playerKillThrowEnemySound);
             Destroy(gameObject, (playerKillThrowEnemySound.length)/2);
 
